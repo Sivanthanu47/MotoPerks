@@ -6,7 +6,7 @@
 
 //  Copyright (c) 2014 Raja Sekhar. All rights reserved.
 //
-#define kOFFSET_FOR_KEYBOARD 30.0
+#define kOFFSET_FOR_KEYBOARD 50.0
 
 #import "CBAddVehicleFirstViewController.h"
 #import "CBAddVehicleSecondViewController.h"

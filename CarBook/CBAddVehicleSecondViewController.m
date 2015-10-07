@@ -5,7 +5,7 @@
 //  Created by Raja Sekhar on 11/11/14.
 //  Copyright (c) 2014 Raja Sekhar. All rights reserved.
 //
-#define kOFFSET_FOR_KEYBOARD 140.0
+#define kOFFSET_FOR_KEYBOARD 180.0
 
 #import "CBAddVehicleSecondViewController.h"
 #import "VehicleAddSecondCustomCell.h"
@@ -49,8 +49,8 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
     [_datePicker setDatePickerMode:UIDatePickerModeDate];
     [_datePicker setDate:[NSDate date]];
     dictData = [[NSMutableDictionary alloc] init];
-    
-
+    strFirstService = @"";
+    strLastSerDate =@"";
    }
 - (void)viewWillAppear:(BOOL)animated {
     picAndTblHieght = 216;
@@ -297,9 +297,18 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
         if ([dictData objectForKey:@"Note"]) {
             cellView.txtNote.text = [dictData objectForKey:@"Note"];
         }
-    
-        strServiceKmInterval=[[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"];
-        strServiceMonthInterval=[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"];
+        if ([[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"] == NULL) {
+            strServiceKmInterval = @"every 500 kms";
+        }
+        else{
+            strServiceKmInterval=[[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"];
+        }
+        if ([[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"]== NULL) {
+            strServiceMonthInterval=@"every 4 months";
+        }
+        else{
+            strServiceKmInterval=[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"];
+        }
         UIImage *img = [UIImage imageNamed:@"arrow_down.png"];
         cellView.txtNote.delegate = self;
         [cellView.txtNote.layer setBorderWidth:1.0];
@@ -347,24 +356,10 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
         [cellView.serMonthInterval setImage:img forState:UIControlStateNormal];
         [cellView.serMonthInterval setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
         [cellView.serMonthInterval setTitleEdgeInsets:UIEdgeInsetsMake(0,-(img.size.width - 5),0,0)];
-        NSString * byMonth =[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"]];
-        NSString * byKm =[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"]];
-        if (byMonth == nil || [byMonth isEqual:@"(null)"]) {
-            [cellView.serMonthInterval setTitle:@"ByMonth" forState:UIControlStateNormal];
-        }
-        else{
-            [cellView.serMonthInterval setTitle:[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"] forState:UIControlStateNormal];
-
-        }
-        if (byKm == nil || [byKm isEqual:@"(null)"]) {
-            [cellView.SerKmInt setTitle:@"ByKm" forState:UIControlStateNormal];
-        }
-        else{
-            [cellView.SerKmInt setTitle:[[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"] forState:UIControlStateNormal];
-            
+        [cellView.serMonthInterval setTitle:strServiceMonthInterval forState:UIControlStateNormal];
+        [cellView.SerKmInt setTitle:strServiceKmInterval forState:UIControlStateNormal];
         }
         return cellView;
-    }
     return cell;
 }
 
@@ -392,9 +387,10 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
     }
 }
 - (IBAction)saveCarDetails:(id)sender {
-    [self showProgressHud];
     NSMutableArray *key = [[NSMutableArray alloc] initWithObjects:@"FirstService",@"ServiceMonthInterval",@"ServiceKmInterval",@"LastServiceDate",@"Sellername",@"ownerAddr",@"Note",nil];
+    [key addObjectsFromArray:[addCarDetails allKeys]];
     NSMutableArray *value = [[NSMutableArray alloc] initWithObjects:strFirstService,strServiceMonthInterval,strServiceKmInterval,strLastSerDate, cellView.sellerName.text,cellView.txtAddress.text,cellView.txtNote.text,nil];
+    [value addObjectsFromArray:[addCarDetails allValues]];
     __block BOOL isNull = NO;
     [value enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if ((obj == nil) || ([[obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] < 1 || [obj isEqualToString:@""])) {
@@ -402,9 +398,10 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
             isNull = YES;
         }
     }];
+
     if (isNull == YES) {
         UIAlertView *addAlert = [[UIAlertView alloc] initWithTitle:[[CBStrings sharedStrings] getString:@"app_name"]
-                                                           message:[[CBStrings sharedStrings] getAlertMessage:@"NoText"]
+                                                           message:[[CBStrings sharedStrings] getAlertMessage:@"ErrorAddVehicleDetail"]
                                                           delegate:nil
                                                  cancelButtonTitle:@"OK"
                                                  otherButtonTitles:nil];
