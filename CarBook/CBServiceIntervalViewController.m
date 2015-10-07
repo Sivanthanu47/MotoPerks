@@ -48,7 +48,7 @@ NSString * monthType,*kmType;
     if ([[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"] == NULL&& [[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"] == NULL) {
         lblMonth.text = @"Service Interval is Set to every 4 months from last service date ";
         lblKm.text =@"Service Interval is Set to every 4000 kmsfrom current kilometer reading ";
-        [KmBtn setTitle:@"every 4000 kms" forState:UIControlStateNormal];
+        [KmBtn setTitle:@"every 500 kms" forState:UIControlStateNormal];
         [monthBtn setTitle:@"every 4 months" forState:UIControlStateNormal];
     }
     else{
@@ -93,18 +93,20 @@ NSString * monthType,*kmType;
     [popoverView addSubview:myPickerView];
     [popoverView addSubview:pickerToolbar];
     [self.view addSubview:popoverView];
+    monthType = @"every 4 months";
+    kmType = @"every 500 kms";
 }
 -(void)pickerDone{
     if (btnTag == 0){
-    NSString * monthStr = [NSString stringWithFormat:@"Service Interval is Set to %@ from last service date ",[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"]];
+    NSString * monthStr = [NSString stringWithFormat:@"Service Interval is Set to %@ from last service date ",monthType];
         lblMonth.text = monthStr;
-         [monthBtn setTitle:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"]] forState:UIControlStateNormal];
+        [monthBtn setTitle:[NSString stringWithFormat:@"%@",monthType] forState:UIControlStateNormal];
     }
     else{
-    NSString * kmStr = [NSString stringWithFormat:@"Service Interval is Set to %@ from current kilometer reading ",[[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"]];
+    NSString * kmStr = [NSString stringWithFormat:@"Service Interval is Set to %@ from current kilometer reading ",kmType];
     
     lblKm.text =kmStr;
-    [KmBtn setTitle:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"kmType"]] forState:UIControlStateNormal];
+    [KmBtn setTitle:[NSString stringWithFormat:@"%@",kmType] forState:UIControlStateNormal];
     }
     [myPickerView removeFromSuperview];
     [pickerToolbar removeFromSuperview];

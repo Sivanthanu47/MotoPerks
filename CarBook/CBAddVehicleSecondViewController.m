@@ -394,13 +394,17 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
 - (IBAction)saveCarDetails:(id)sender {
     [self showProgressHud];
     NSMutableArray *key = [[NSMutableArray alloc] initWithObjects:@"FirstService",@"ServiceMonthInterval",@"ServiceKmInterval",@"LastServiceDate",@"Sellername",@"ownerAddr",@"Note",nil];
-    [key addObjectsFromArray:[addCarDetails allKeys]];
     NSMutableArray *value = [[NSMutableArray alloc] initWithObjects:strFirstService,strServiceMonthInterval,strServiceKmInterval,strLastSerDate, cellView.sellerName.text,cellView.txtAddress.text,cellView.txtNote.text,nil];
-    [value addObjectsFromArray:[addCarDetails allValues]];
     __block BOOL isNull = NO;
+    [value enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ((obj == nil) || ([[obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] < 1 || [obj isEqualToString:@""])) {
+            *stop = YES;
+            isNull = YES;
+        }
+    }];
     if (isNull == YES) {
         UIAlertView *addAlert = [[UIAlertView alloc] initWithTitle:[[CBStrings sharedStrings] getString:@"app_name"]
-                                                           message:[[CBStrings sharedStrings] getAlertMessage:@"ErrorAddVehicleDetail"]
+                                                           message:[[CBStrings sharedStrings] getAlertMessage:@"NoText"]
                                                           delegate:nil
                                                  cancelButtonTitle:@"OK"
                                                  otherButtonTitles:nil];

@@ -233,9 +233,11 @@ UIImage *chosenImage;
     popoverView = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, (self.view.frame.size.height-(self.navigationController.navigationBar.frame.size.height + pickerHieght)), self.view.frame.size.width, (self.navigationController.navigationBar.frame.size.height + pickerHieght))];
     NSLog(@" navigation height %f",(self.view.frame.size.height-(self.navigationController.navigationBar.frame.size.height + pickerHieght)));
     popoverView.backgroundColor = [UIColor whiteColor];
+    strFuelType = @"Petrol";
     [popoverView addSubview:myPickerView];
     [popoverView addSubview:pickerToolbar];
     [self.view addSubview:popoverView];
+   
 }
 -(void)pickerDone{
     [cellView.btnFuelType setTitle:strFuelType forState:UIControlStateNormal];
