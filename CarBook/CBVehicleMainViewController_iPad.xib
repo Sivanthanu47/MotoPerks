@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBVehicleMainViewController">
+            <connections>
+                <outlet property="tblMainView" destination="tGD-nG-yqH" id="tZo-J3-HAr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="JWC-2U-Rfp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pi1-2h-hex">
+                    <rect key="frame" x="0.0" y="65" width="768" height="959"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tGD-nG-yqH">
+                    <rect key="frame" x="0.0" y="387" width="768" height="637"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7al-kK-kV6"/>
+                        <outlet property="delegate" destination="-1" id="lc8-2F-LIU"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ED1-eA-RtY">
+                    <rect key="frame" x="102" y="125" width="150" height="148"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="qlZ-Vq-ku0"/>
+                    </constraints>
+                    <state key="normal" image="mileage.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadMileageView:" destination="-1" eventType="touchUpInside" id="SAK-c4-tWb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK2-Es-Oyo">
+                    <rect key="frame" x="494" y="125" width="150" height="148"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="148" id="DzN-w1-3PR"/>
+                        <constraint firstAttribute="width" constant="150" id="OMr-AT-kQS"/>
+                    </constraints>
+                    <state key="normal" image="service.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadServiceView:" destination="-1" eventType="touchUpInside" id="DtO-ak-SNC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dK2-Es-Oyo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="125" id="1hi-U8-cTc"/>
+                <constraint firstItem="Pi1-2h-hex" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="6s2-OB-hvs"/>
+                <constraint firstItem="tGD-nG-yqH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CKR-bx-byU"/>
+                <constraint firstItem="ED1-eA-RtY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="102" id="Et7-Oh-aHY"/>
+                <constraint firstAttribute="trailing" secondItem="dK2-Es-Oyo" secondAttribute="trailing" constant="124" id="FGp-Ma-vP3"/>
+                <constraint firstItem="dK2-Es-Oyo" firstAttribute="bottom" secondItem="ED1-eA-RtY" secondAttribute="bottom" id="FLW-Zc-ANS"/>
+                <constraint firstAttribute="trailing" secondItem="tGD-nG-yqH" secondAttribute="trailing" id="P1L-DF-VtJ"/>
+                <constraint firstAttribute="bottom" secondItem="tGD-nG-yqH" secondAttribute="bottom" id="R2M-M4-zPE"/>
+                <constraint firstItem="dK2-Es-Oyo" firstAttribute="top" secondItem="ED1-eA-RtY" secondAttribute="top" id="W2O-nb-AlB"/>
+                <constraint firstAttribute="bottom" secondItem="Pi1-2h-hex" secondAttribute="bottom" id="Ys6-sX-wS4"/>
+                <constraint firstItem="Pi1-2h-hex" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c78-aj-k4d"/>
+                <constraint firstItem="tGD-nG-yqH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="387" id="jFM-f2-yeT"/>
+                <constraint firstAttribute="trailing" secondItem="Pi1-2h-hex" secondAttribute="trailing" id="s82-2t-qEC"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HomePage-bg.png" width="640" height="1090"/>
+        <image name="mileage.png" width="296" height="294"/>
+        <image name="service.png" width="243" height="242"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

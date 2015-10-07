@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBTrackMileageListViewController">
+            <connections>
+                <outlet property="searchbar" destination="RgP-CH-NR2" id="V12-Cj-nC5"/>
+                <outlet property="tblTrack" destination="IFV-3e-jSA" id="R7R-Ue-ru2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search Vehicle" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RgP-CH-NR2">
+                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="SE3-O1-r6u"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IFV-3e-jSA">
+                    <rect key="frame" x="6" y="114" width="308" height="360"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0V8-uD-3U3"/>
+                        <outlet property="delegate" destination="-1" id="jyF-jV-Iac"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RgP-CH-NR2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9fX-9Y-0OU"/>
+                <constraint firstAttribute="bottom" secondItem="IFV-3e-jSA" secondAttribute="bottom" constant="6" id="Ifp-ND-wtq"/>
+                <constraint firstItem="IFV-3e-jSA" firstAttribute="top" secondItem="RgP-CH-NR2" secondAttribute="bottom" constant="6" id="YDM-5j-oZp"/>
+                <constraint firstAttribute="trailing" secondItem="IFV-3e-jSA" secondAttribute="trailing" constant="6" id="cfR-Fh-HTf"/>
+                <constraint firstItem="IFV-3e-jSA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="eG4-hk-Tcc"/>
+                <constraint firstItem="RgP-CH-NR2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="fDZ-SV-il1"/>
+                <constraint firstItem="RgP-CH-NR2" firstAttribute="centerX" secondItem="IFV-3e-jSA" secondAttribute="centerX" id="xta-ZW-cod"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

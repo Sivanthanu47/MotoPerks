@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBVehicleServiceStationViewController">
+            <connections>
+                <outlet property="tblView" destination="RO4-Vo-K8l" id="HG6-Ra-EfH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="jyq-KS-nlg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="IbP-v7-PSX">
+                    <rect key="frame" x="0.0" y="65" width="768" height="959"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RO4-Vo-K8l">
+                    <rect key="frame" x="0.0" y="65" width="768" height="959"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bw0-Tf-tqh"/>
+                        <outlet property="delegate" destination="-1" id="uCP-eh-hkH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RO4-Vo-K8l" secondAttribute="trailing" id="2Eo-4q-hvA"/>
+                <constraint firstItem="IbP-v7-PSX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="99l-Tf-fnd"/>
+                <constraint firstAttribute="bottom" secondItem="RO4-Vo-K8l" secondAttribute="bottom" id="Chg-8q-sjb"/>
+                <constraint firstAttribute="trailing" secondItem="IbP-v7-PSX" secondAttribute="trailing" id="dam-Z1-pST"/>
+                <constraint firstItem="RO4-Vo-K8l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="ejb-b8-Tzu"/>
+                <constraint firstItem="IbP-v7-PSX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="ekE-Vc-Yzg"/>
+                <constraint firstAttribute="bottom" secondItem="IbP-v7-PSX" secondAttribute="bottom" id="g1L-5r-wC7"/>
+                <constraint firstItem="RO4-Vo-K8l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u3I-pl-fS9"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HomePage-bg.png" width="640" height="1090"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

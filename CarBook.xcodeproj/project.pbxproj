@@ -1,0 +1,1393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320E94E41AC966D6009E3FB3 /* CBVehicleServiceStationLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320E94E21AC966D6009E3FB3 /* CBVehicleServiceStationLogController.m */; };
+		320E94E51AC966D6009E3FB3 /* CBVehicleServiceStationLogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320E94E31AC966D6009E3FB3 /* CBVehicleServiceStationLogController.xib */; };
+		320E94EA1AC9677B009E3FB3 /* CBVehicleServiceStationLogController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320E94E81AC9677B009E3FB3 /* CBVehicleServiceStationLogController_iPad.xib */; };
+		321513FF1A7F533400A22B4A /* CBVehicleStationDetailController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321513FD1A7F533400A22B4A /* CBVehicleStationDetailController_iPad.xib */; };
+		321514031A7F539300A22B4A /* CBVehicleStationDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321514011A7F539300A22B4A /* CBVehicleStationDetailController.m */; };
+		321514041A7F539300A22B4A /* CBVehicleStationDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321514021A7F539300A22B4A /* CBVehicleStationDetailController.xib */; };
+		321A885C1A370DD600FBDF4C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321A885B1A370DD600FBDF4C /* CoreLocation.framework */; };
+		321A885E1A370DE200FBDF4C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321A885D1A370DE200FBDF4C /* MobileCoreServices.framework */; };
+		321E231A1A52621900F01F77 /* CBTrackMileageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E23181A52621900F01F77 /* CBTrackMileageViewController.m */; };
+		321E231B1A52621900F01F77 /* CBTrackMileageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321E23191A52621900F01F77 /* CBTrackMileageViewController.xib */; };
+		321E23201A52624800F01F77 /* CBTrackMileageViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321E231E1A52624800F01F77 /* CBTrackMileageViewController_iPad.xib */; };
+		3221037E1AA8510500FF91B5 /* CBVehicleEditViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3221037C1AA8510500FF91B5 /* CBVehicleEditViewController_iPad.xib */; };
+		3221BD241A95B43D0059A4DB /* CBVehicleServiceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221BD231A95B43D0059A4DB /* CBVehicleServiceDetailViewController.m */; };
+		3221BD271A95B4540059A4DB /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221BD261A95B4540059A4DB /* CustomCell.m */; };
+		3221BD291A95B4A50059A4DB /* CBVehicleServiceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3221BD281A95B4A50059A4DB /* CBVehicleServiceDetailViewController.xib */; };
+		3221BD2B1A95B4AE0059A4DB /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3221BD2A1A95B4AE0059A4DB /* CustomCell.xib */; };
+		3221BD2D1A95B4C80059A4DB /* CBVehicleServiceDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3221BD2C1A95B4C80059A4DB /* CBVehicleServiceDetailViewController_iPad.xib */; };
+		3221BD2F1A95B4D30059A4DB /* CustomCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3221BD2E1A95B4D30059A4DB /* CustomCell_iPad.xib */; };
+		32274CB21A934432001BECC9 /* settings_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 32274CB11A934432001BECC9 /* settings_icon.png */; };
+		32274CB41A9344E7001BECC9 /* settings_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32274CB31A9344E7001BECC9 /* settings_icon@2x.png */; };
+		322773C01A638752001C5EAA /* CBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322773BE1A638752001C5EAA /* CBSettingsViewController.m */; };
+		322773C11A638752001C5EAA /* CBSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322773BF1A638752001C5EAA /* CBSettingsViewController.xib */; };
+		322773C61A6387A3001C5EAA /* CBSettingsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322773C41A6387A3001C5EAA /* CBSettingsViewController_iPad.xib */; };
+		322773C81A63BA4E001C5EAA /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322773C71A63BA4E001C5EAA /* EventKit.framework */; };
+		322B17791AAF047C001C6E28 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322B17781AAF047C001C6E28 /* MessageUI.framework */; };
+		322D5D051ABADC0500F6AC09 /* CBAddGasStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D5D031ABADC0500F6AC09 /* CBAddGasStationViewController.m */; };
+		322D5D061ABADC0500F6AC09 /* CBAddGasStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322D5D041ABADC0500F6AC09 /* CBAddGasStationViewController.xib */; };
+		322D5D0B1ABADC5800F6AC09 /* CBAddGasStationViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322D5D091ABADC5800F6AC09 /* CBAddGasStationViewController_iPad.xib */; };
+		3231A66B1A9DCCCB00013765 /* CBReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3231A6691A9DCCCB00013765 /* CBReportViewController.m */; };
+		3231A66C1A9DCCCB00013765 /* CBReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3231A66A1A9DCCCB00013765 /* CBReportViewController.xib */; };
+		3231A6711A9DDAEB00013765 /* CBReportViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3231A66F1A9DDAEB00013765 /* CBReportViewController_iPad.xib */; };
+		32375B8F1A492002007F74D8 /* CBTrackMileageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32375B8D1A492002007F74D8 /* CBTrackMileageListViewController.m */; };
+		32375B901A492002007F74D8 /* CBTrackMileageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32375B8E1A492002007F74D8 /* CBTrackMileageListViewController.xib */; };
+		32375B951A492049007F74D8 /* CBTrackMileageListViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32375B931A492049007F74D8 /* CBTrackMileageListViewController_iPad.xib */; };
+		32375B991A492145007F74D8 /* CBTrackMileageAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32375B971A492145007F74D8 /* CBTrackMileageAddViewController.m */; };
+		32375B9A1A492145007F74D8 /* CBTrackMileageAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32375B981A492145007F74D8 /* CBTrackMileageAddViewController.xib */; };
+		32375B9F1A49216E007F74D8 /* CBTrackMileageAddViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32375B9D1A49216E007F74D8 /* CBTrackMileageAddViewController_iPad.xib */; };
+		3238A2BB1A3AA8C80094631E /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3238A2BA1A3AA8C80094631E /* MapViewAnnotation.m */; };
+		32396FC81AA044A500EF8125 /* CPDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 32396FC71AA044A500EF8125 /* CPDConstants.m */; };
+		32396FCA1AA044AF00EF8125 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32396FC91AA044AF00EF8125 /* libCorePlot-CocoaTouch.a */; };
+		32396FCD1AA046E500EF8125 /* CPDStockPriceStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 32396FCC1AA046E500EF8125 /* CPDStockPriceStore.m */; };
+		323D797E1AB6BAA700DF95D7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323D797D1AB6BAA700DF95D7 /* CFNetwork.framework */; };
+		323DDBC01AA58F9D0055090D /* CBVehicleEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDBBE1AA58F9D0055090D /* CBVehicleEditViewController.m */; };
+		323DDBC11AA58F9D0055090D /* CBVehicleEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323DDBBF1AA58F9D0055090D /* CBVehicleEditViewController.xib */; };
+		323EB4B01AC3C44400DDB117 /* VehicleAddFirstCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 323EB4AE1AC3C44400DDB117 /* VehicleAddFirstCustomCell.m */; };
+		323EB4B11AC3C44400DDB117 /* VehicleAddFirstCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323EB4AF1AC3C44400DDB117 /* VehicleAddFirstCustomCell.xib */; };
+		323EB4B61AC3C48900DDB117 /* VehicleAddFirstCustomCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323EB4B41AC3C48900DDB117 /* VehicleAddFirstCustomCell_iPad.xib */; };
+		323EB4BA1AC3C4F900DDB117 /* VehicleAddSecondCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 323EB4B81AC3C4F900DDB117 /* VehicleAddSecondCustomCell.m */; };
+		323EB4BB1AC3C4F900DDB117 /* VehicleAddSecondCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323EB4B91AC3C4F900DDB117 /* VehicleAddSecondCustomCell.xib */; };
+		323EB4C01AC3C52600DDB117 /* VehicleAddSecondCustomCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323EB4BE1AC3C52600DDB117 /* VehicleAddSecondCustomCell_iPad.xib */; };
+		323F419A1A1204A200FC6001 /* CBAddVehicleSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323F41981A1204A200FC6001 /* CBAddVehicleSecondViewController.m */; };
+		323F419B1A1204A200FC6001 /* CBAddVehicleSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323F41991A1204A200FC6001 /* CBAddVehicleSecondViewController.xib */; };
+		323F41A01A1204CD00FC6001 /* CBAddVehicleSecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323F419E1A1204CD00FC6001 /* CBAddVehicleSecondViewController_iPad.xib */; };
+		323FA5F71A43E6EF009D8B33 /* arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 323FA5F61A43E6EF009D8B33 /* arrow_down.png */; };
+		3243BC9A1A397332008C9797 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3243BC991A397332008C9797 /* MBProgressHUD.m */; };
+		3243BC9E1A39A59A008C9797 /* CBMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3243BC9C1A39A59A008C9797 /* CBMapViewController.m */; };
+		3243BC9F1A39A59A008C9797 /* CBMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3243BC9D1A39A59A008C9797 /* CBMapViewController.xib */; };
+		3243BCA41A39A5CD008C9797 /* CBMapViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3243BCA21A39A5CD008C9797 /* CBMapViewController_iPad.xib */; };
+		3261CB1B1A5A8EA000D60837 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261CB1A1A5A8EA000D60837 /* CoreData.framework */; };
+		3279CB0E1A5A95E900E1CD20 /* LineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279CB0C1A5A95E900E1CD20 /* LineChartViewController.m */; };
+		3279CB0F1A5A95E900E1CD20 /* LineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3279CB0D1A5A95E900E1CD20 /* LineChartViewController.xib */; };
+		327AFF7A1A5A66D40033220E /* LineChartViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327AFF781A5A66D40033220E /* LineChartViewController_iPad.xib */; };
+		327AFF851A5A70C40033220E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327AFF841A5A70C40033220E /* QuartzCore.framework */; };
+		328705251A09DF380090C540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 328705241A09DF380090C540 /* main.m */; };
+		328705281A09DF380090C540 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 328705271A09DF380090C540 /* AppDelegate.m */; };
+		328705301A09DF380090C540 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3287052F1A09DF380090C540 /* Images.xcassets */; };
+		3287053F1A09DF380090C540 /* CarBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287053E1A09DF380090C540 /* CarBookTests.m */; };
+		3287054B1A09E0260090C540 /* CBVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328705491A09E0260090C540 /* CBVehicleViewController.m */; };
+		3287054C1A09E0260090C540 /* CBVehicleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287054A1A09E0260090C540 /* CBVehicleViewController.xib */; };
+		328705591A09E7680090C540 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 328705541A09E7680090C540 /* FMDatabase.m */; };
+		3287055A1A09E7680090C540 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 328705561A09E7680090C540 /* FMDatabaseAdditions.m */; };
+		3287055B1A09E7680090C540 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 328705581A09E7680090C540 /* FMResultSet.m */; };
+		328705611A09E7A00090C540 /* CBStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287055E1A09E7A00090C540 /* CBStrings.m */; };
+		328705621A09E7A00090C540 /* CBDBMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 328705601A09E7A00090C540 /* CBDBMethods.m */; };
+		328705651A09E7FD0090C540 /* strings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 328705641A09E7FD0090C540 /* strings.plist */; };
+		3287056B1A09F2820090C540 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287056A1A09F2820090C540 /* Constants.m */; };
+		3287056D1A09FD620090C540 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3287056C1A09FD620090C540 /* libsqlite3.dylib */; };
+		328705711A0A00490090C540 /* CBAddVehicleFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287056F1A0A00490090C540 /* CBAddVehicleFirstViewController.m */; };
+		328705721A0A00490090C540 /* CBAddVehicleFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 328705701A0A00490090C540 /* CBAddVehicleFirstViewController.xib */; };
+		3292BC371A0C780F004B7314 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292BC361A0C780F004B7314 /* Foundation.framework */; };
+		3292BC391A0C7822004B7314 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292BC381A0C7822004B7314 /* Security.framework */; };
+		3292BC3B1A0C7854004B7314 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292BC3A1A0C7854004B7314 /* AVFoundation.framework */; };
+		3292BC3E1A0C7993004B7314 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292BC3D1A0C7993004B7314 /* UIKit.framework */; };
+		3292BC401A0C79C4004B7314 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3292BC3F1A0C79C4004B7314 /* Default-568h@2x.png */; };
+		32A59C771A47FA4C007CA3EB /* CBVehicleDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A59C751A47FA4C007CA3EB /* CBVehicleDetailsViewController.m */; };
+		32A59C781A47FA4C007CA3EB /* CBVehicleDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A59C761A47FA4C007CA3EB /* CBVehicleDetailsViewController.xib */; };
+		32A59C7D1A47FA82007CA3EB /* CBVehicleDetailsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A59C7B1A47FA82007CA3EB /* CBVehicleDetailsViewController_iPad.xib */; };
+		32A93F0E1A6F7F210021CD2B /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A93F0D1A6F7F210021CD2B /* NSDate+TimeAgo.m */; };
+		32A93F121A6F82AA0021CD2B /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 32A93F0F1A6F82AA0021CD2B /* Yellow.png */; };
+		32A93F131A6F82AA0021CD2B /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 32A93F101A6F82AA0021CD2B /* Green.png */; };
+		32A93F141A6F82AA0021CD2B /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 32A93F111A6F82AA0021CD2B /* Red.png */; };
+		32BC1CD91A3801AA00E091E6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BC1CD81A3801AA00E091E6 /* MapKit.framework */; };
+		32BC1CDD1A38047400E091E6 /* CBVehicleServiceStationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC1CDB1A38047400E091E6 /* CBVehicleServiceStationController.m */; };
+		32BC1CDE1A38047400E091E6 /* CBVehicleServiceStationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CDC1A38047400E091E6 /* CBVehicleServiceStationController.xib */; };
+		32BC1CE31A3804C900E091E6 /* CBVehicleServiceStationController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CE11A3804C900E091E6 /* CBVehicleServiceStationController_iPad.xib */; };
+		32BC1CE71A38070A00E091E6 /* CBVehicleServiceStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC1CE51A38070A00E091E6 /* CBVehicleServiceStationViewController.m */; };
+		32BC1CE81A38070A00E091E6 /* CBVehicleServiceStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CE61A38070A00E091E6 /* CBVehicleServiceStationViewController.xib */; };
+		32BC1CED1A38072D00E091E6 /* CBVehicleServiceStationViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CEB1A38072D00E091E6 /* CBVehicleServiceStationViewController_iPad.xib */; };
+		32BC1CF11A380A1400E091E6 /* CBVehicleServiceStationAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC1CEF1A380A1400E091E6 /* CBVehicleServiceStationAddController.m */; };
+		32BC1CF21A380A1400E091E6 /* CBVehicleServiceStationAddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CF01A380A1400E091E6 /* CBVehicleServiceStationAddController.xib */; };
+		32BC1CF71A380A2D00E091E6 /* CBVehicleServiceStationAddController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CF51A380A2D00E091E6 /* CBVehicleServiceStationAddController_iPad.xib */; };
+		32BC1CFB1A38186100E091E6 /* CBVehicleMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC1CF91A38186100E091E6 /* CBVehicleMainViewController.m */; };
+		32BC1CFC1A38186100E091E6 /* CBVehicleMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CFA1A38186100E091E6 /* CBVehicleMainViewController.xib */; };
+		32BC1D011A3818AA00E091E6 /* CBVehicleMainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC1CFF1A3818AA00E091E6 /* CBVehicleMainViewController_iPad.xib */; };
+		32C588B61ABFF17100FFFE7F /* gas_station-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C588B51ABFF17100FFFE7F /* gas_station-50.png */; };
+		32C588BA1AC0183300FFFE7F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C588B91AC0183300FFFE7F /* Reachability.m */; };
+		32D91AA51A0B9302002484EA /* CBVehicleViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D91AA31A0B9302002484EA /* CBVehicleViewController_iPad.xib */; };
+		32D91AAA1A0B93B3002484EA /* CBAddVehicleFirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D91AA81A0B93B3002484EA /* CBAddVehicleFirstViewController_iPad.xib */; };
+		32D9ADEA1A402F18007F3D84 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9ADE91A402F18007F3D84 /* AssetsLibrary.framework */; };
+		E60FDD711AFA2F580038F208 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FDD701AFA2F580038F208 /* CHCSVParser.m */; };
+		E610DDC31B036E5A00ECD3AC /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E610DDC21B036E5A00ECD3AC /* arrow.png */; };
+		E610DDD31B03750300ECD3AC /* Export_trim.png in Resources */ = {isa = PBXBuildFile; fileRef = E610DDCE1B03750300ECD3AC /* Export_trim.png */; };
+		E610DDD41B03750300ECD3AC /* Map_trim.png in Resources */ = {isa = PBXBuildFile; fileRef = E610DDCF1B03750300ECD3AC /* Map_trim.png */; };
+		E610DDD51B03750300ECD3AC /* Report_trim.png in Resources */ = {isa = PBXBuildFile; fileRef = E610DDD01B03750300ECD3AC /* Report_trim.png */; };
+		E610DDD61B03750300ECD3AC /* Stations_trim.png in Resources */ = {isa = PBXBuildFile; fileRef = E610DDD11B03750300ECD3AC /* Stations_trim.png */; };
+		E610DDD71B03750300ECD3AC /* vehicles_trim.png in Resources */ = {isa = PBXBuildFile; fileRef = E610DDD21B03750300ECD3AC /* vehicles_trim.png */; };
+		E6123FE51B01B1C1000963D4 /* HomePage-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6123FD71B01B1C1000963D4 /* HomePage-bg.png */; };
+		E61240021B01DA15000963D4 /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = E6123FF51B01DA15000963D4 /* About.png */; };
+		E61240031B01DA15000963D4 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = E6123FF61B01DA15000963D4 /* Settings.png */; };
+		E61240061B01DA15000963D4 /* mileage.png in Resources */ = {isa = PBXBuildFile; fileRef = E6123FF91B01DA15000963D4 /* mileage.png */; };
+		E61240071B01DA15000963D4 /* mileagewithouttext.png in Resources */ = {isa = PBXBuildFile; fileRef = E6123FFA1B01DA15000963D4 /* mileagewithouttext.png */; };
+		E612400A1B01DA15000963D4 /* service.png in Resources */ = {isa = PBXBuildFile; fileRef = E6123FFD1B01DA15000963D4 /* service.png */; };
+		E616BF3E1B538D5900197009 /* segment_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E616BF3B1B538D5900197009 /* segment_arrow.png */; };
+		E616BF3F1B538D5900197009 /* segment_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E616BF3C1B538D5900197009 /* segment_arrow@2x.png */; };
+		E616BF421B53921F00197009 /* SDSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E616BF411B53921F00197009 /* SDSegmentedControl.m */; };
+		E616BF441B539A6000197009 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = E616BF431B539A6000197009 /* clock.png */; };
+		E61A59D01B8ECC0D0077C603 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E61A59CD1B8ECC0D0077C603 /* OverlayView.m */; };
+		E61A59D11B8ECC0D0077C603 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E61A59CF1B8ECC0D0077C603 /* ImageUtils.m */; };
+		E61A59D81B8ECC9D0077C603 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = E61A59D31B8ECC9D0077C603 /* UIImage+RoundedCorner.m */; };
+		E61A59D91B8ECC9D0077C603 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E61A59D51B8ECC9D0077C603 /* UIImage+Resize.m */; };
+		E61A59DA1B8ECC9D0077C603 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = E61A59D71B8ECC9D0077C603 /* UIImage+Alpha.m */; };
+		E61A59DE1B8ECEAF0077C603 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61A59DD1B8ECEAF0077C603 /* CoreGraphics.framework */; };
+		E621553F1B0B13EF0087C4F2 /* MapPin.png in Resources */ = {isa = PBXBuildFile; fileRef = E621553E1B0B13EF0087C4F2 /* MapPin.png */; };
+		E62AD7131AF3A269005F790B /* CBExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62AD7111AF3A269005F790B /* CBExportViewController.m */; };
+		E62AD7141AF3A269005F790B /* CBExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62AD7121AF3A269005F790B /* CBExportViewController.xib */; };
+		E62E8C4D1AF7276700CE7A28 /* CBExportViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62E8C4C1AF7276700CE7A28 /* CBExportViewController_ipad.xib */; };
+		E631E3881AFCD0C8001674F2 /* CBChosenVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E631E3861AFCD0C8001674F2 /* CBChosenVehicleViewController.m */; };
+		E631E3891AFCD0C8001674F2 /* CBChosenVehicleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631E3871AFCD0C8001674F2 /* CBChosenVehicleViewController.xib */; };
+		E631E38D1AFCD109001674F2 /* CBChosenStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E631E38B1AFCD109001674F2 /* CBChosenStationViewController.m */; };
+		E631E38E1AFCD109001674F2 /* CBChosenStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631E38C1AFCD109001674F2 /* CBChosenStationViewController.xib */; };
+		E631E3901AFCD19C001674F2 /* CBChosenVehicleViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631E38F1AFCD19C001674F2 /* CBChosenVehicleViewController_ipad.xib */; };
+		E631E3921AFCD1C3001674F2 /* CBChosenStationViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631E3911AFCD1C3001674F2 /* CBChosenStationViewController_ipad.xib */; };
+		E670EB971B87148100641E82 /* CBImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E670EB951B87148100641E82 /* CBImageViewController.m */; };
+		E670EB981B87148100641E82 /* CBImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E670EB961B87148100641E82 /* CBImageViewController.xib */; };
+		E67578261B54FA46002DADB5 /* arrowup.png in Resources */ = {isa = PBXBuildFile; fileRef = E67578251B54FA46002DADB5 /* arrowup.png */; };
+		E67AEB0C1B81B1B2004FF60E /* CBServiceIntervalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AEB0A1B81B1B2004FF60E /* CBServiceIntervalViewController.m */; };
+		E67AEB0D1B81B1B2004FF60E /* CBServiceIntervalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E67AEB0B1B81B1B2004FF60E /* CBServiceIntervalViewController.xib */; };
+		E67F07911B8D8D47009306C2 /* arrow-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E67F07901B8D8D47009306C2 /* arrow-blue.png */; };
+		E68769811B8AD005008154E1 /* CBIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E687697F1B8AD005008154E1 /* CBIconViewController.m */; };
+		E68769821B8AD005008154E1 /* CBIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68769801B8AD005008154E1 /* CBIconViewController.xib */; };
+		E6E038E41B7B535C00856AFA /* CBNoVehiclesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E038E21B7B535C00856AFA /* CBNoVehiclesViewController.m */; };
+		E6E038E51B7B535C00856AFA /* CBNoVehiclesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E038E31B7B535C00856AFA /* CBNoVehiclesViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		328705391A09DF380090C540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328705171A09DF380090C540 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3287051E1A09DF380090C540;
+			remoteInfo = CarBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		320E94E11AC966D6009E3FB3 /* CBVehicleServiceStationLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleServiceStationLogController.h; sourceTree = "<group>"; };
+		320E94E21AC966D6009E3FB3 /* CBVehicleServiceStationLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleServiceStationLogController.m; sourceTree = "<group>"; };
+		320E94E31AC966D6009E3FB3 /* CBVehicleServiceStationLogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationLogController.xib; sourceTree = "<group>"; };
+		320E94E81AC9677B009E3FB3 /* CBVehicleServiceStationLogController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationLogController_iPad.xib; sourceTree = "<group>"; };
+		321513FD1A7F533400A22B4A /* CBVehicleStationDetailController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleStationDetailController_iPad.xib; sourceTree = "<group>"; };
+		321514001A7F539300A22B4A /* CBVehicleStationDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleStationDetailController.h; sourceTree = "<group>"; };
+		321514011A7F539300A22B4A /* CBVehicleStationDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleStationDetailController.m; sourceTree = "<group>"; };
+		321514021A7F539300A22B4A /* CBVehicleStationDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleStationDetailController.xib; sourceTree = "<group>"; };
+		321A885B1A370DD600FBDF4C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		321A885D1A370DE200FBDF4C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		321E23171A52621900F01F77 /* CBTrackMileageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTrackMileageViewController.h; sourceTree = "<group>"; };
+		321E23181A52621900F01F77 /* CBTrackMileageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTrackMileageViewController.m; sourceTree = "<group>"; };
+		321E23191A52621900F01F77 /* CBTrackMileageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBTrackMileageViewController.xib; sourceTree = "<group>"; };
+		321E231E1A52624800F01F77 /* CBTrackMileageViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBTrackMileageViewController_iPad.xib; sourceTree = "<group>"; };
+		3221037C1AA8510500FF91B5 /* CBVehicleEditViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleEditViewController_iPad.xib; sourceTree = "<group>"; };
+		3221BD221A95B43D0059A4DB /* CBVehicleServiceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleServiceDetailViewController.h; sourceTree = "<group>"; };
+		3221BD231A95B43D0059A4DB /* CBVehicleServiceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleServiceDetailViewController.m; sourceTree = "<group>"; };
+		3221BD251A95B4540059A4DB /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		3221BD261A95B4540059A4DB /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		3221BD281A95B4A50059A4DB /* CBVehicleServiceDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceDetailViewController.xib; sourceTree = "<group>"; };
+		3221BD2A1A95B4AE0059A4DB /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		3221BD2C1A95B4C80059A4DB /* CBVehicleServiceDetailViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		3221BD2E1A95B4D30059A4DB /* CustomCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell_iPad.xib; sourceTree = "<group>"; };
+		32274CB11A934432001BECC9 /* settings_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_icon.png; sourceTree = "<group>"; };
+		32274CB31A9344E7001BECC9 /* settings_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_icon@2x.png"; sourceTree = "<group>"; };
+		322773BD1A638752001C5EAA /* CBSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSettingsViewController.h; sourceTree = "<group>"; };
+		322773BE1A638752001C5EAA /* CBSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSettingsViewController.m; sourceTree = "<group>"; };
+		322773BF1A638752001C5EAA /* CBSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBSettingsViewController.xib; sourceTree = "<group>"; };
+		322773C41A6387A3001C5EAA /* CBSettingsViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBSettingsViewController_iPad.xib; sourceTree = "<group>"; };
+		322773C71A63BA4E001C5EAA /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		322B17781AAF047C001C6E28 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		322D5D021ABADC0500F6AC09 /* CBAddGasStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAddGasStationViewController.h; sourceTree = "<group>"; };
+		322D5D031ABADC0500F6AC09 /* CBAddGasStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAddGasStationViewController.m; sourceTree = "<group>"; };
+		322D5D041ABADC0500F6AC09 /* CBAddGasStationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBAddGasStationViewController.xib; sourceTree = "<group>"; };
+		322D5D091ABADC5800F6AC09 /* CBAddGasStationViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBAddGasStationViewController_iPad.xib; sourceTree = "<group>"; };
+		3231A6681A9DCCCB00013765 /* CBReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBReportViewController.h; sourceTree = "<group>"; };
+		3231A6691A9DCCCB00013765 /* CBReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBReportViewController.m; sourceTree = "<group>"; };
+		3231A66A1A9DCCCB00013765 /* CBReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBReportViewController.xib; sourceTree = "<group>"; };
+		3231A66F1A9DDAEB00013765 /* CBReportViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBReportViewController_iPad.xib; sourceTree = "<group>"; };
+		32375B8C1A492002007F74D8 /* CBTrackMileageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTrackMileageListViewController.h; sourceTree = "<group>"; };
+		32375B8D1A492002007F74D8 /* CBTrackMileageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTrackMileageListViewController.m; sourceTree = "<group>"; };
+		32375B8E1A492002007F74D8 /* CBTrackMileageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBTrackMileageListViewController.xib; sourceTree = "<group>"; };
+		32375B931A492049007F74D8 /* CBTrackMileageListViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBTrackMileageListViewController_iPad.xib; sourceTree = "<group>"; };
+		32375B961A492145007F74D8 /* CBTrackMileageAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTrackMileageAddViewController.h; sourceTree = "<group>"; };
+		32375B971A492145007F74D8 /* CBTrackMileageAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTrackMileageAddViewController.m; sourceTree = "<group>"; };
+		32375B981A492145007F74D8 /* CBTrackMileageAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBTrackMileageAddViewController.xib; sourceTree = "<group>"; };
+		32375B9D1A49216E007F74D8 /* CBTrackMileageAddViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBTrackMileageAddViewController_iPad.xib; sourceTree = "<group>"; };
+		3238A2B91A3AA8C80094631E /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewAnnotation.h; sourceTree = "<group>"; };
+		3238A2BA1A3AA8C80094631E /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewAnnotation.m; sourceTree = "<group>"; };
+		32396F761AA0449800EF8125 /* _CPTConstraintsFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTConstraintsFixed.h; sourceTree = "<group>"; };
+		32396F771AA0449800EF8125 /* _CPTConstraintsRelative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTConstraintsRelative.h; sourceTree = "<group>"; };
+		32396F781AA0449800EF8125 /* _CPTDarkGradientTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTDarkGradientTheme.h; sourceTree = "<group>"; };
+		32396F791AA0449800EF8125 /* _CPTFillColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillColor.h; sourceTree = "<group>"; };
+		32396F7A1AA0449800EF8125 /* _CPTFillGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillGradient.h; sourceTree = "<group>"; };
+		32396F7B1AA0449800EF8125 /* _CPTFillImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillImage.h; sourceTree = "<group>"; };
+		32396F7C1AA0449800EF8125 /* _CPTPlainBlackTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTPlainBlackTheme.h; sourceTree = "<group>"; };
+		32396F7D1AA0449800EF8125 /* _CPTPlainWhiteTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTPlainWhiteTheme.h; sourceTree = "<group>"; };
+		32396F7E1AA0449800EF8125 /* _CPTSlateTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTSlateTheme.h; sourceTree = "<group>"; };
+		32396F7F1AA0449800EF8125 /* _CPTStocksTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTStocksTheme.h; sourceTree = "<group>"; };
+		32396F801AA0449800EF8125 /* _CPTXYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTXYTheme.h; sourceTree = "<group>"; };
+		32396F811AA0449800EF8125 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
+		32396F821AA0449800EF8125 /* CPTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotation.h; sourceTree = "<group>"; };
+		32396F831AA0449800EF8125 /* CPTAnnotationHostLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotationHostLayer.h; sourceTree = "<group>"; };
+		32396F841AA0449800EF8125 /* CPTAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxis.h; sourceTree = "<group>"; };
+		32396F851AA0449800EF8125 /* CPTAxisLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabel.h; sourceTree = "<group>"; };
+		32396F861AA0449800EF8125 /* CPTAxisLabelGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabelGroup.h; sourceTree = "<group>"; };
+		32396F871AA0449800EF8125 /* CPTAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisSet.h; sourceTree = "<group>"; };
+		32396F881AA0449800EF8125 /* CPTAxisTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisTitle.h; sourceTree = "<group>"; };
+		32396F891AA0449800EF8125 /* CPTBarPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBarPlot.h; sourceTree = "<group>"; };
+		32396F8A1AA0449800EF8125 /* CPTBorderedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBorderedLayer.h; sourceTree = "<group>"; };
+		32396F8B1AA0449800EF8125 /* CPTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColor.h; sourceTree = "<group>"; };
+		32396F8C1AA0449800EF8125 /* CPTColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColorSpace.h; sourceTree = "<group>"; };
+		32396F8D1AA0449800EF8125 /* CPTConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTConstraints.h; sourceTree = "<group>"; };
+		32396F8E1AA0449800EF8125 /* CPTDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTDefinitions.h; sourceTree = "<group>"; };
+		32396F8F1AA0449800EF8125 /* CPTExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTExceptions.h; sourceTree = "<group>"; };
+		32396F901AA0449800EF8125 /* CPTFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTFill.h; sourceTree = "<group>"; };
+		32396F911AA0449800EF8125 /* CPTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGradient.h; sourceTree = "<group>"; };
+		32396F921AA0449800EF8125 /* CPTGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraph.h; sourceTree = "<group>"; };
+		32396F931AA0449800EF8125 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
+		32396F941AA0449800EF8125 /* CPTGridLineGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLineGroup.h; sourceTree = "<group>"; };
+		32396F951AA0449800EF8125 /* CPTGridLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLines.h; sourceTree = "<group>"; };
+		32396F961AA0449800EF8125 /* CPTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTImage.h; sourceTree = "<group>"; };
+		32396F971AA0449800EF8125 /* CPTLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayer.h; sourceTree = "<group>"; };
+		32396F981AA0449800EF8125 /* CPTLayerAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayerAnnotation.h; sourceTree = "<group>"; };
+		32396F991AA0449800EF8125 /* CPTLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegend.h; sourceTree = "<group>"; };
+		32396F9A1AA0449800EF8125 /* CPTLegendEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegendEntry.h; sourceTree = "<group>"; };
+		32396F9B1AA0449800EF8125 /* CPTLimitBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLimitBand.h; sourceTree = "<group>"; };
+		32396F9C1AA0449800EF8125 /* CPTLineCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineCap.h; sourceTree = "<group>"; };
+		32396F9D1AA0449800EF8125 /* CPTLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineStyle.h; sourceTree = "<group>"; };
+		32396F9E1AA0449800EF8125 /* CPTMutableLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableLineStyle.h; sourceTree = "<group>"; };
+		32396F9F1AA0449800EF8125 /* CPTMutableNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTMutableNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		32396FA01AA0449800EF8125 /* CPTMutableNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableNumericData.h; sourceTree = "<group>"; };
+		32396FA11AA0449800EF8125 /* CPTMutablePlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutablePlotRange.h; sourceTree = "<group>"; };
+		32396FA21AA0449800EF8125 /* CPTMutableShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableShadow.h; sourceTree = "<group>"; };
+		32396FA31AA0449800EF8125 /* CPTMutableTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableTextStyle.h; sourceTree = "<group>"; };
+		32396FA41AA0449800EF8125 /* CPTNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		32396FA51AA0449800EF8125 /* CPTNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericData.h; sourceTree = "<group>"; };
+		32396FA61AA0449800EF8125 /* CPTNumericDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericDataType.h; sourceTree = "<group>"; };
+		32396FA71AA0449800EF8125 /* CPTPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPathExtensions.h; sourceTree = "<group>"; };
+		32396FA81AA0449800EF8125 /* CPTPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPieChart.h; sourceTree = "<group>"; };
+		32396FA91AA0449800EF8125 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
+		32396FAA1AA0449800EF8125 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
+		32396FAB1AA0449800EF8125 /* CPTPlatformSpecificFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificFunctions.h; sourceTree = "<group>"; };
+		32396FAC1AA0449800EF8125 /* CPTPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlot.h; sourceTree = "<group>"; };
+		32396FAD1AA0449800EF8125 /* CPTPlotArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotArea.h; sourceTree = "<group>"; };
+		32396FAE1AA0449800EF8125 /* CPTPlotAreaFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotAreaFrame.h; sourceTree = "<group>"; };
+		32396FAF1AA0449800EF8125 /* CPTPlotGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotGroup.h; sourceTree = "<group>"; };
+		32396FB01AA0449800EF8125 /* CPTPlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotRange.h; sourceTree = "<group>"; };
+		32396FB11AA0449800EF8125 /* CPTPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpace.h; sourceTree = "<group>"; };
+		32396FB21AA0449800EF8125 /* CPTPlotSpaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpaceAnnotation.h; sourceTree = "<group>"; };
+		32396FB31AA0449800EF8125 /* CPTPlotSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSymbol.h; sourceTree = "<group>"; };
+		32396FB41AA0449800EF8125 /* CPTRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTRangePlot.h; sourceTree = "<group>"; };
+		32396FB51AA0449800EF8125 /* CPTResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTResponder.h; sourceTree = "<group>"; };
+		32396FB61AA0449800EF8125 /* CPTScatterPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTScatterPlot.h; sourceTree = "<group>"; };
+		32396FB71AA0449800EF8125 /* CPTShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTShadow.h; sourceTree = "<group>"; };
+		32396FB81AA0449800EF8125 /* CPTTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextLayer.h; sourceTree = "<group>"; };
+		32396FB91AA0449800EF8125 /* CPTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextStyle.h; sourceTree = "<group>"; };
+		32396FBA1AA0449800EF8125 /* CPTTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTheme.h; sourceTree = "<group>"; };
+		32396FBB1AA0449800EF8125 /* CPTTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTimeFormatter.h; sourceTree = "<group>"; };
+		32396FBC1AA0449800EF8125 /* CPTTradingRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTradingRangePlot.h; sourceTree = "<group>"; };
+		32396FBD1AA0449800EF8125 /* CPTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTUtilities.h; sourceTree = "<group>"; };
+		32396FBE1AA0449800EF8125 /* CPTXYAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxis.h; sourceTree = "<group>"; };
+		32396FBF1AA0449800EF8125 /* CPTXYAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxisSet.h; sourceTree = "<group>"; };
+		32396FC01AA0449800EF8125 /* CPTXYGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYGraph.h; sourceTree = "<group>"; };
+		32396FC11AA0449800EF8125 /* CPTXYPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYPlotSpace.h; sourceTree = "<group>"; };
+		32396FC21AA0449800EF8125 /* NSCoderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
+		32396FC31AA0449800EF8125 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
+		32396FC41AA0449800EF8125 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
+		32396FC61AA044A500EF8125 /* CPDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDConstants.h; sourceTree = "<group>"; };
+		32396FC71AA044A500EF8125 /* CPDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDConstants.m; sourceTree = "<group>"; };
+		32396FC91AA044AF00EF8125 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		32396FCB1AA046E500EF8125 /* CPDStockPriceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDStockPriceStore.h; sourceTree = "<group>"; };
+		32396FCC1AA046E500EF8125 /* CPDStockPriceStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDStockPriceStore.m; sourceTree = "<group>"; };
+		323D797D1AB6BAA700DF95D7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		323DDBBD1AA58F9D0055090D /* CBVehicleEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleEditViewController.h; sourceTree = "<group>"; };
+		323DDBBE1AA58F9D0055090D /* CBVehicleEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleEditViewController.m; sourceTree = "<group>"; };
+		323DDBBF1AA58F9D0055090D /* CBVehicleEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleEditViewController.xib; sourceTree = "<group>"; };
+		323EB4AD1AC3C44400DDB117 /* VehicleAddFirstCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleAddFirstCustomCell.h; sourceTree = "<group>"; };
+		323EB4AE1AC3C44400DDB117 /* VehicleAddFirstCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleAddFirstCustomCell.m; sourceTree = "<group>"; };
+		323EB4AF1AC3C44400DDB117 /* VehicleAddFirstCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleAddFirstCustomCell.xib; sourceTree = "<group>"; };
+		323EB4B41AC3C48900DDB117 /* VehicleAddFirstCustomCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleAddFirstCustomCell_iPad.xib; sourceTree = "<group>"; };
+		323EB4B71AC3C4F900DDB117 /* VehicleAddSecondCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleAddSecondCustomCell.h; sourceTree = "<group>"; };
+		323EB4B81AC3C4F900DDB117 /* VehicleAddSecondCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleAddSecondCustomCell.m; sourceTree = "<group>"; };
+		323EB4B91AC3C4F900DDB117 /* VehicleAddSecondCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleAddSecondCustomCell.xib; sourceTree = "<group>"; };
+		323EB4BE1AC3C52600DDB117 /* VehicleAddSecondCustomCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleAddSecondCustomCell_iPad.xib; sourceTree = "<group>"; };
+		323F41971A1204A200FC6001 /* CBAddVehicleSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAddVehicleSecondViewController.h; sourceTree = "<group>"; };
+		323F41981A1204A200FC6001 /* CBAddVehicleSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAddVehicleSecondViewController.m; sourceTree = "<group>"; };
+		323F41991A1204A200FC6001 /* CBAddVehicleSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBAddVehicleSecondViewController.xib; sourceTree = "<group>"; };
+		323F419E1A1204CD00FC6001 /* CBAddVehicleSecondViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBAddVehicleSecondViewController_iPad.xib; sourceTree = "<group>"; };
+		323FA5F61A43E6EF009D8B33 /* arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down.png; sourceTree = "<group>"; };
+		3243BC981A397332008C9797 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3243BC991A397332008C9797 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3243BC9B1A39A59A008C9797 /* CBMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMapViewController.h; sourceTree = "<group>"; };
+		3243BC9C1A39A59A008C9797 /* CBMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMapViewController.m; sourceTree = "<group>"; };
+		3243BC9D1A39A59A008C9797 /* CBMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBMapViewController.xib; sourceTree = "<group>"; };
+		3243BCA21A39A5CD008C9797 /* CBMapViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBMapViewController_iPad.xib; sourceTree = "<group>"; };
+		3261CB181A5A8C0400D60837 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3261CB1A1A5A8EA000D60837 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3279CB0B1A5A95E900E1CD20 /* LineChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartViewController.h; sourceTree = "<group>"; };
+		3279CB0C1A5A95E900E1CD20 /* LineChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartViewController.m; sourceTree = "<group>"; };
+		3279CB0D1A5A95E900E1CD20 /* LineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartViewController.xib; sourceTree = "<group>"; };
+		327AFF781A5A66D40033220E /* LineChartViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartViewController_iPad.xib; sourceTree = "<group>"; };
+		327AFF841A5A70C40033220E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3287051F1A09DF380090C540 /* CarBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		328705231A09DF380090C540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328705241A09DF380090C540 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		328705261A09DF380090C540 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		328705271A09DF380090C540 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3287052F1A09DF380090C540 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		328705381A09DF380090C540 /* CarBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3287053D1A09DF380090C540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3287053E1A09DF380090C540 /* CarBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarBookTests.m; sourceTree = "<group>"; };
+		328705481A09E0260090C540 /* CBVehicleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleViewController.h; sourceTree = "<group>"; };
+		328705491A09E0260090C540 /* CBVehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleViewController.m; sourceTree = "<group>"; };
+		3287054A1A09E0260090C540 /* CBVehicleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleViewController.xib; sourceTree = "<group>"; };
+		328705531A09E7680090C540 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		328705541A09E7680090C540 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		328705551A09E7680090C540 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		328705561A09E7680090C540 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		328705571A09E7680090C540 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		328705581A09E7680090C540 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		3287055D1A09E7A00090C540 /* CBStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStrings.h; sourceTree = "<group>"; };
+		3287055E1A09E7A00090C540 /* CBStrings.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = CBStrings.m; sourceTree = "<group>"; };
+		3287055F1A09E7A00090C540 /* CBDBMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDBMethods.h; sourceTree = "<group>"; };
+		328705601A09E7A00090C540 /* CBDBMethods.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = CBDBMethods.m; sourceTree = "<group>"; };
+		328705641A09E7FD0090C540 /* strings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = strings.plist; sourceTree = "<group>"; };
+		328705691A09F2820090C540 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3287056A1A09F2820090C540 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		3287056C1A09FD620090C540 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3287056E1A0A00490090C540 /* CBAddVehicleFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAddVehicleFirstViewController.h; sourceTree = "<group>"; };
+		3287056F1A0A00490090C540 /* CBAddVehicleFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAddVehicleFirstViewController.m; sourceTree = "<group>"; };
+		328705701A0A00490090C540 /* CBAddVehicleFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBAddVehicleFirstViewController.xib; sourceTree = "<group>"; };
+		3292BC361A0C780F004B7314 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3292BC381A0C7822004B7314 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3292BC3A1A0C7854004B7314 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3292BC3D1A0C7993004B7314 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3292BC3F1A0C79C4004B7314 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		32A59C741A47FA4C007CA3EB /* CBVehicleDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleDetailsViewController.h; sourceTree = "<group>"; };
+		32A59C751A47FA4C007CA3EB /* CBVehicleDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleDetailsViewController.m; sourceTree = "<group>"; };
+		32A59C761A47FA4C007CA3EB /* CBVehicleDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleDetailsViewController.xib; sourceTree = "<group>"; };
+		32A59C7B1A47FA82007CA3EB /* CBVehicleDetailsViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleDetailsViewController_iPad.xib; sourceTree = "<group>"; };
+		32A93F0C1A6F7F210021CD2B /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		32A93F0D1A6F7F210021CD2B /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		32A93F0F1A6F82AA0021CD2B /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
+		32A93F101A6F82AA0021CD2B /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		32A93F111A6F82AA0021CD2B /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		32BC1CD81A3801AA00E091E6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		32BC1CDA1A38047400E091E6 /* CBVehicleServiceStationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleServiceStationController.h; sourceTree = "<group>"; };
+		32BC1CDB1A38047400E091E6 /* CBVehicleServiceStationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleServiceStationController.m; sourceTree = "<group>"; };
+		32BC1CDC1A38047400E091E6 /* CBVehicleServiceStationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationController.xib; sourceTree = "<group>"; };
+		32BC1CE11A3804C900E091E6 /* CBVehicleServiceStationController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationController_iPad.xib; sourceTree = "<group>"; };
+		32BC1CE41A38070A00E091E6 /* CBVehicleServiceStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleServiceStationViewController.h; sourceTree = "<group>"; };
+		32BC1CE51A38070A00E091E6 /* CBVehicleServiceStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleServiceStationViewController.m; sourceTree = "<group>"; };
+		32BC1CE61A38070A00E091E6 /* CBVehicleServiceStationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationViewController.xib; sourceTree = "<group>"; };
+		32BC1CEB1A38072D00E091E6 /* CBVehicleServiceStationViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationViewController_iPad.xib; sourceTree = "<group>"; };
+		32BC1CEE1A380A1400E091E6 /* CBVehicleServiceStationAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleServiceStationAddController.h; sourceTree = "<group>"; };
+		32BC1CEF1A380A1400E091E6 /* CBVehicleServiceStationAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleServiceStationAddController.m; sourceTree = "<group>"; };
+		32BC1CF01A380A1400E091E6 /* CBVehicleServiceStationAddController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationAddController.xib; sourceTree = "<group>"; };
+		32BC1CF51A380A2D00E091E6 /* CBVehicleServiceStationAddController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleServiceStationAddController_iPad.xib; sourceTree = "<group>"; };
+		32BC1CF81A38186100E091E6 /* CBVehicleMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVehicleMainViewController.h; sourceTree = "<group>"; };
+		32BC1CF91A38186100E091E6 /* CBVehicleMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVehicleMainViewController.m; sourceTree = "<group>"; };
+		32BC1CFA1A38186100E091E6 /* CBVehicleMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleMainViewController.xib; sourceTree = "<group>"; };
+		32BC1CFF1A3818AA00E091E6 /* CBVehicleMainViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleMainViewController_iPad.xib; sourceTree = "<group>"; };
+		32C588B51ABFF17100FFFE7F /* gas_station-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gas_station-50.png"; sourceTree = "<group>"; };
+		32C588B81AC0183300FFFE7F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		32C588B91AC0183300FFFE7F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		32D91AA31A0B9302002484EA /* CBVehicleViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBVehicleViewController_iPad.xib; sourceTree = "<group>"; };
+		32D91AA81A0B93B3002484EA /* CBAddVehicleFirstViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBAddVehicleFirstViewController_iPad.xib; sourceTree = "<group>"; };
+		32D9ADE91A402F18007F3D84 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E60FDD6F1AFA2F580038F208 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		E60FDD701AFA2F580038F208 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		E610DDC21B036E5A00ECD3AC /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../arrow.png; sourceTree = "<group>"; };
+		E610DDCE1B03750300ECD3AC /* Export_trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Export_trim.png; path = ../Export_trim.png; sourceTree = "<group>"; };
+		E610DDCF1B03750300ECD3AC /* Map_trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Map_trim.png; path = ../Map_trim.png; sourceTree = "<group>"; };
+		E610DDD01B03750300ECD3AC /* Report_trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Report_trim.png; path = ../Report_trim.png; sourceTree = "<group>"; };
+		E610DDD11B03750300ECD3AC /* Stations_trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stations_trim.png; path = ../Stations_trim.png; sourceTree = "<group>"; };
+		E610DDD21B03750300ECD3AC /* vehicles_trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vehicles_trim.png; path = ../vehicles_trim.png; sourceTree = "<group>"; };
+		E6123FD71B01B1C1000963D4 /* HomePage-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HomePage-bg.png"; path = "../HomePage-bg.png"; sourceTree = "<group>"; };
+		E6123FF51B01DA15000963D4 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = About.png; path = ../About.png; sourceTree = "<group>"; };
+		E6123FF61B01DA15000963D4 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../Settings.png; sourceTree = "<group>"; };
+		E6123FF91B01DA15000963D4 /* mileage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mileage.png; path = ../mileage.png; sourceTree = "<group>"; };
+		E6123FFA1B01DA15000963D4 /* mileagewithouttext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mileagewithouttext.png; path = ../mileagewithouttext.png; sourceTree = "<group>"; };
+		E6123FFD1B01DA15000963D4 /* service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = service.png; path = ../service.png; sourceTree = "<group>"; };
+		E616BF3B1B538D5900197009 /* segment_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = segment_arrow.png; sourceTree = "<group>"; };
+		E616BF3C1B538D5900197009 /* segment_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segment_arrow@2x.png"; sourceTree = "<group>"; };
+		E616BF401B53921F00197009 /* SDSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSegmentedControl.h; sourceTree = "<group>"; };
+		E616BF411B53921F00197009 /* SDSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSegmentedControl.m; sourceTree = "<group>"; };
+		E616BF431B539A6000197009 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		E61A59CC1B8ECC0D0077C603 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		E61A59CD1B8ECC0D0077C603 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		E61A59CE1B8ECC0D0077C603 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		E61A59CF1B8ECC0D0077C603 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		E61A59D21B8ECC9D0077C603 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		E61A59D31B8ECC9D0077C603 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		E61A59D41B8ECC9D0077C603 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		E61A59D51B8ECC9D0077C603 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		E61A59D61B8ECC9D0077C603 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		E61A59D71B8ECC9D0077C603 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		E61A59DD1B8ECEAF0077C603 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		E621553E1B0B13EF0087C4F2 /* MapPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MapPin.png; path = ../MapPin.png; sourceTree = "<group>"; };
+		E62AD7101AF3A269005F790B /* CBExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBExportViewController.h; sourceTree = "<group>"; };
+		E62AD7111AF3A269005F790B /* CBExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBExportViewController.m; sourceTree = "<group>"; };
+		E62AD7121AF3A269005F790B /* CBExportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBExportViewController.xib; sourceTree = "<group>"; };
+		E62E8C4C1AF7276700CE7A28 /* CBExportViewController_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBExportViewController_ipad.xib; sourceTree = "<group>"; };
+		E631E3851AFCD0C7001674F2 /* CBChosenVehicleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBChosenVehicleViewController.h; sourceTree = "<group>"; };
+		E631E3861AFCD0C8001674F2 /* CBChosenVehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBChosenVehicleViewController.m; sourceTree = "<group>"; };
+		E631E3871AFCD0C8001674F2 /* CBChosenVehicleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBChosenVehicleViewController.xib; sourceTree = "<group>"; };
+		E631E38A1AFCD109001674F2 /* CBChosenStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBChosenStationViewController.h; sourceTree = "<group>"; };
+		E631E38B1AFCD109001674F2 /* CBChosenStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBChosenStationViewController.m; sourceTree = "<group>"; };
+		E631E38C1AFCD109001674F2 /* CBChosenStationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBChosenStationViewController.xib; sourceTree = "<group>"; };
+		E631E38F1AFCD19C001674F2 /* CBChosenVehicleViewController_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBChosenVehicleViewController_ipad.xib; sourceTree = "<group>"; };
+		E631E3911AFCD1C3001674F2 /* CBChosenStationViewController_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBChosenStationViewController_ipad.xib; sourceTree = "<group>"; };
+		E670EB941B87148100641E82 /* CBImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBImageViewController.h; sourceTree = "<group>"; };
+		E670EB951B87148100641E82 /* CBImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBImageViewController.m; sourceTree = "<group>"; };
+		E670EB961B87148100641E82 /* CBImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBImageViewController.xib; sourceTree = "<group>"; };
+		E67578251B54FA46002DADB5 /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
+		E67AEB091B81B1B2004FF60E /* CBServiceIntervalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBServiceIntervalViewController.h; sourceTree = "<group>"; };
+		E67AEB0A1B81B1B2004FF60E /* CBServiceIntervalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBServiceIntervalViewController.m; sourceTree = "<group>"; };
+		E67AEB0B1B81B1B2004FF60E /* CBServiceIntervalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBServiceIntervalViewController.xib; sourceTree = "<group>"; };
+		E67F07901B8D8D47009306C2 /* arrow-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-blue.png"; path = "../../arrow-blue.png"; sourceTree = "<group>"; };
+		E687697E1B8AD005008154E1 /* CBIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIconViewController.h; sourceTree = "<group>"; };
+		E687697F1B8AD005008154E1 /* CBIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIconViewController.m; sourceTree = "<group>"; };
+		E68769801B8AD005008154E1 /* CBIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBIconViewController.xib; sourceTree = "<group>"; };
+		E6E038E11B7B535C00856AFA /* CBNoVehiclesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNoVehiclesViewController.h; sourceTree = "<group>"; };
+		E6E038E21B7B535C00856AFA /* CBNoVehiclesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNoVehiclesViewController.m; sourceTree = "<group>"; };
+		E6E038E31B7B535C00856AFA /* CBNoVehiclesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBNoVehiclesViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3287051C1A09DF380090C540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61A59DE1B8ECEAF0077C603 /* CoreGraphics.framework in Frameworks */,
+				327AFF851A5A70C40033220E /* QuartzCore.framework in Frameworks */,
+				323D797E1AB6BAA700DF95D7 /* CFNetwork.framework in Frameworks */,
+				322B17791AAF047C001C6E28 /* MessageUI.framework in Frameworks */,
+				3292BC371A0C780F004B7314 /* Foundation.framework in Frameworks */,
+				322773C81A63BA4E001C5EAA /* EventKit.framework in Frameworks */,
+				3261CB1B1A5A8EA000D60837 /* CoreData.framework in Frameworks */,
+				32D9ADEA1A402F18007F3D84 /* AssetsLibrary.framework in Frameworks */,
+				32BC1CD91A3801AA00E091E6 /* MapKit.framework in Frameworks */,
+				321A885E1A370DE200FBDF4C /* MobileCoreServices.framework in Frameworks */,
+				321A885C1A370DD600FBDF4C /* CoreLocation.framework in Frameworks */,
+				3292BC3E1A0C7993004B7314 /* UIKit.framework in Frameworks */,
+				3292BC3B1A0C7854004B7314 /* AVFoundation.framework in Frameworks */,
+				3292BC391A0C7822004B7314 /* Security.framework in Frameworks */,
+				3287056D1A09FD620090C540 /* libsqlite3.dylib in Frameworks */,
+				32396FCA1AA044AF00EF8125 /* libCorePlot-CocoaTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328705351A09DF380090C540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32396F751AA0449800EF8125 /* CorePlotHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				32396F761AA0449800EF8125 /* _CPTConstraintsFixed.h */,
+				32396F771AA0449800EF8125 /* _CPTConstraintsRelative.h */,
+				32396F781AA0449800EF8125 /* _CPTDarkGradientTheme.h */,
+				32396F791AA0449800EF8125 /* _CPTFillColor.h */,
+				32396F7A1AA0449800EF8125 /* _CPTFillGradient.h */,
+				32396F7B1AA0449800EF8125 /* _CPTFillImage.h */,
+				32396F7C1AA0449800EF8125 /* _CPTPlainBlackTheme.h */,
+				32396F7D1AA0449800EF8125 /* _CPTPlainWhiteTheme.h */,
+				32396F7E1AA0449800EF8125 /* _CPTSlateTheme.h */,
+				32396F7F1AA0449800EF8125 /* _CPTStocksTheme.h */,
+				32396F801AA0449800EF8125 /* _CPTXYTheme.h */,
+				32396F811AA0449800EF8125 /* CorePlot-CocoaTouch.h */,
+				32396F821AA0449800EF8125 /* CPTAnnotation.h */,
+				32396F831AA0449800EF8125 /* CPTAnnotationHostLayer.h */,
+				32396F841AA0449800EF8125 /* CPTAxis.h */,
+				32396F851AA0449800EF8125 /* CPTAxisLabel.h */,
+				32396F861AA0449800EF8125 /* CPTAxisLabelGroup.h */,
+				32396F871AA0449800EF8125 /* CPTAxisSet.h */,
+				32396F881AA0449800EF8125 /* CPTAxisTitle.h */,
+				32396F891AA0449800EF8125 /* CPTBarPlot.h */,
+				32396F8A1AA0449800EF8125 /* CPTBorderedLayer.h */,
+				32396F8B1AA0449800EF8125 /* CPTColor.h */,
+				32396F8C1AA0449800EF8125 /* CPTColorSpace.h */,
+				32396F8D1AA0449800EF8125 /* CPTConstraints.h */,
+				32396F8E1AA0449800EF8125 /* CPTDefinitions.h */,
+				32396F8F1AA0449800EF8125 /* CPTExceptions.h */,
+				32396F901AA0449800EF8125 /* CPTFill.h */,
+				32396F911AA0449800EF8125 /* CPTGradient.h */,
+				32396F921AA0449800EF8125 /* CPTGraph.h */,
+				32396F931AA0449800EF8125 /* CPTGraphHostingView.h */,
+				32396F941AA0449800EF8125 /* CPTGridLineGroup.h */,
+				32396F951AA0449800EF8125 /* CPTGridLines.h */,
+				32396F961AA0449800EF8125 /* CPTImage.h */,
+				32396F971AA0449800EF8125 /* CPTLayer.h */,
+				32396F981AA0449800EF8125 /* CPTLayerAnnotation.h */,
+				32396F991AA0449800EF8125 /* CPTLegend.h */,
+				32396F9A1AA0449800EF8125 /* CPTLegendEntry.h */,
+				32396F9B1AA0449800EF8125 /* CPTLimitBand.h */,
+				32396F9C1AA0449800EF8125 /* CPTLineCap.h */,
+				32396F9D1AA0449800EF8125 /* CPTLineStyle.h */,
+				32396F9E1AA0449800EF8125 /* CPTMutableLineStyle.h */,
+				32396F9F1AA0449800EF8125 /* CPTMutableNumericData+TypeConversion.h */,
+				32396FA01AA0449800EF8125 /* CPTMutableNumericData.h */,
+				32396FA11AA0449800EF8125 /* CPTMutablePlotRange.h */,
+				32396FA21AA0449800EF8125 /* CPTMutableShadow.h */,
+				32396FA31AA0449800EF8125 /* CPTMutableTextStyle.h */,
+				32396FA41AA0449800EF8125 /* CPTNumericData+TypeConversion.h */,
+				32396FA51AA0449800EF8125 /* CPTNumericData.h */,
+				32396FA61AA0449800EF8125 /* CPTNumericDataType.h */,
+				32396FA71AA0449800EF8125 /* CPTPathExtensions.h */,
+				32396FA81AA0449800EF8125 /* CPTPieChart.h */,
+				32396FA91AA0449800EF8125 /* CPTPlatformSpecificCategories.h */,
+				32396FAA1AA0449800EF8125 /* CPTPlatformSpecificDefines.h */,
+				32396FAB1AA0449800EF8125 /* CPTPlatformSpecificFunctions.h */,
+				32396FAC1AA0449800EF8125 /* CPTPlot.h */,
+				32396FAD1AA0449800EF8125 /* CPTPlotArea.h */,
+				32396FAE1AA0449800EF8125 /* CPTPlotAreaFrame.h */,
+				32396FAF1AA0449800EF8125 /* CPTPlotGroup.h */,
+				32396FB01AA0449800EF8125 /* CPTPlotRange.h */,
+				32396FB11AA0449800EF8125 /* CPTPlotSpace.h */,
+				32396FB21AA0449800EF8125 /* CPTPlotSpaceAnnotation.h */,
+				32396FB31AA0449800EF8125 /* CPTPlotSymbol.h */,
+				32396FB41AA0449800EF8125 /* CPTRangePlot.h */,
+				32396FB51AA0449800EF8125 /* CPTResponder.h */,
+				32396FB61AA0449800EF8125 /* CPTScatterPlot.h */,
+				32396FB71AA0449800EF8125 /* CPTShadow.h */,
+				32396FB81AA0449800EF8125 /* CPTTextLayer.h */,
+				32396FB91AA0449800EF8125 /* CPTTextStyle.h */,
+				32396FBA1AA0449800EF8125 /* CPTTheme.h */,
+				32396FBB1AA0449800EF8125 /* CPTTimeFormatter.h */,
+				32396FBC1AA0449800EF8125 /* CPTTradingRangePlot.h */,
+				32396FBD1AA0449800EF8125 /* CPTUtilities.h */,
+				32396FBE1AA0449800EF8125 /* CPTXYAxis.h */,
+				32396FBF1AA0449800EF8125 /* CPTXYAxisSet.h */,
+				32396FC01AA0449800EF8125 /* CPTXYGraph.h */,
+				32396FC11AA0449800EF8125 /* CPTXYPlotSpace.h */,
+				32396FC21AA0449800EF8125 /* NSCoderExtensions.h */,
+				32396FC31AA0449800EF8125 /* NSDecimalNumberExtensions.h */,
+				32396FC41AA0449800EF8125 /* NSNumberExtensions.h */,
+			);
+			path = CorePlotHeaders;
+			sourceTree = "<group>";
+		};
+		32396FC51AA044A500EF8125 /* Starter Files */ = {
+			isa = PBXGroup;
+			children = (
+				32396FC61AA044A500EF8125 /* CPDConstants.h */,
+				32396FC71AA044A500EF8125 /* CPDConstants.m */,
+				32396FCB1AA046E500EF8125 /* CPDStockPriceStore.h */,
+				32396FCC1AA046E500EF8125 /* CPDStockPriceStore.m */,
+			);
+			path = "Starter Files";
+			sourceTree = "<group>";
+		};
+		323A1CE61A97053100E88202 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				32396FC91AA044AF00EF8125 /* libCorePlot-CocoaTouch.a */,
+				32396FC51AA044A500EF8125 /* Starter Files */,
+				32396F751AA0449800EF8125 /* CorePlotHeaders */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		323B290E1A56925200DD0A9B /* ImageProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				E61A59D21B8ECC9D0077C603 /* UIImage+RoundedCorner.h */,
+				E61A59D31B8ECC9D0077C603 /* UIImage+RoundedCorner.m */,
+				E61A59D41B8ECC9D0077C603 /* UIImage+Resize.h */,
+				E61A59D51B8ECC9D0077C603 /* UIImage+Resize.m */,
+				E61A59D61B8ECC9D0077C603 /* UIImage+Alpha.h */,
+				E61A59D71B8ECC9D0077C603 /* UIImage+Alpha.m */,
+			);
+			name = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		323FA5F51A43E6DA009D8B33 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E67F07901B8D8D47009306C2 /* arrow-blue.png */,
+				E67578251B54FA46002DADB5 /* arrowup.png */,
+				E616BF3B1B538D5900197009 /* segment_arrow.png */,
+				E616BF3C1B538D5900197009 /* segment_arrow@2x.png */,
+				E621553E1B0B13EF0087C4F2 /* MapPin.png */,
+				E610DDCE1B03750300ECD3AC /* Export_trim.png */,
+				E610DDCF1B03750300ECD3AC /* Map_trim.png */,
+				E610DDD01B03750300ECD3AC /* Report_trim.png */,
+				E610DDD11B03750300ECD3AC /* Stations_trim.png */,
+				E610DDD21B03750300ECD3AC /* vehicles_trim.png */,
+				E610DDC21B036E5A00ECD3AC /* arrow.png */,
+				E6123FF51B01DA15000963D4 /* About.png */,
+				E6123FF61B01DA15000963D4 /* Settings.png */,
+				E6123FF91B01DA15000963D4 /* mileage.png */,
+				E6123FFA1B01DA15000963D4 /* mileagewithouttext.png */,
+				E6123FFD1B01DA15000963D4 /* service.png */,
+				E6123FD71B01B1C1000963D4 /* HomePage-bg.png */,
+				3292BC3F1A0C79C4004B7314 /* Default-568h@2x.png */,
+				32274CB31A9344E7001BECC9 /* settings_icon@2x.png */,
+				32274CB11A934432001BECC9 /* settings_icon.png */,
+				32A93F0F1A6F82AA0021CD2B /* Yellow.png */,
+				32A93F101A6F82AA0021CD2B /* Green.png */,
+				32A93F111A6F82AA0021CD2B /* Red.png */,
+				323FA5F61A43E6EF009D8B33 /* arrow_down.png */,
+				32C588B51ABFF17100FFFE7F /* gas_station-50.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		328705161A09DF380090C540 = {
+			isa = PBXGroup;
+			children = (
+				328705211A09DF380090C540 /* CarBook */,
+				3287053B1A09DF380090C540 /* CarBookTests */,
+				3292BC3C1A0C7885004B7314 /* Frameworks */,
+				328705201A09DF380090C540 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		328705201A09DF380090C540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3287051F1A09DF380090C540 /* CarBook.app */,
+				328705381A09DF380090C540 /* CarBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		328705211A09DF380090C540 /* CarBook */ = {
+			isa = PBXGroup;
+			children = (
+				E616BF431B539A6000197009 /* clock.png */,
+				E616BF401B53921F00197009 /* SDSegmentedControl.h */,
+				E616BF411B53921F00197009 /* SDSegmentedControl.m */,
+				323A1CE61A97053100E88202 /* Core */,
+				328705681A09EB840090C540 /* iPhoneViewFiles */,
+				328705671A09EB5B0090C540 /* iPadViewFiles */,
+				328705661A09EAAA0090C540 /* ControllerFiles */,
+				3287055C1A09E76F0090C540 /* Helper */,
+				323FA5F51A43E6DA009D8B33 /* Images */,
+				328705521A09E7470090C540 /* FMDB */,
+				328705261A09DF380090C540 /* AppDelegate.h */,
+				328705271A09DF380090C540 /* AppDelegate.m */,
+				3287052F1A09DF380090C540 /* Images.xcassets */,
+				328705221A09DF380090C540 /* Supporting Files */,
+			);
+			path = CarBook;
+			sourceTree = "<group>";
+		};
+		328705221A09DF380090C540 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				328705631A09E7F30090C540 /* Data */,
+				328705231A09DF380090C540 /* Info.plist */,
+				328705241A09DF380090C540 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3287053B1A09DF380090C540 /* CarBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				3287053E1A09DF380090C540 /* CarBookTests.m */,
+				3287053C1A09DF380090C540 /* Supporting Files */,
+			);
+			path = CarBookTests;
+			sourceTree = "<group>";
+		};
+		3287053C1A09DF380090C540 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3287053D1A09DF380090C540 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		328705521A09E7470090C540 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				328705531A09E7680090C540 /* FMDatabase.h */,
+				328705541A09E7680090C540 /* FMDatabase.m */,
+				328705551A09E7680090C540 /* FMDatabaseAdditions.h */,
+				328705561A09E7680090C540 /* FMDatabaseAdditions.m */,
+				328705571A09E7680090C540 /* FMResultSet.h */,
+				328705581A09E7680090C540 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		3287055C1A09E76F0090C540 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E61A59CC1B8ECC0D0077C603 /* OverlayView.h */,
+				E61A59CD1B8ECC0D0077C603 /* OverlayView.m */,
+				E61A59CE1B8ECC0D0077C603 /* ImageUtils.h */,
+				E61A59CF1B8ECC0D0077C603 /* ImageUtils.m */,
+				3243BC981A397332008C9797 /* MBProgressHUD.h */,
+				3243BC991A397332008C9797 /* MBProgressHUD.m */,
+				328705691A09F2820090C540 /* Constants.h */,
+				3287056A1A09F2820090C540 /* Constants.m */,
+				3238A2B91A3AA8C80094631E /* MapViewAnnotation.h */,
+				3238A2BA1A3AA8C80094631E /* MapViewAnnotation.m */,
+				3287055D1A09E7A00090C540 /* CBStrings.h */,
+				3287055E1A09E7A00090C540 /* CBStrings.m */,
+				3287055F1A09E7A00090C540 /* CBDBMethods.h */,
+				328705601A09E7A00090C540 /* CBDBMethods.m */,
+				32A93F0C1A6F7F210021CD2B /* NSDate+TimeAgo.h */,
+				32A93F0D1A6F7F210021CD2B /* NSDate+TimeAgo.m */,
+				E60FDD6F1AFA2F580038F208 /* CHCSVParser.h */,
+				E60FDD701AFA2F580038F208 /* CHCSVParser.m */,
+				32C588B71AC0180900FFFE7F /* NetWork */,
+				323B290E1A56925200DD0A9B /* ImageProcessing */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		328705631A09E7F30090C540 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				328705641A09E7FD0090C540 /* strings.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		328705661A09EAAA0090C540 /* ControllerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E6E038E11B7B535C00856AFA /* CBNoVehiclesViewController.h */,
+				E6E038E21B7B535C00856AFA /* CBNoVehiclesViewController.m */,
+				32BC1CF81A38186100E091E6 /* CBVehicleMainViewController.h */,
+				32BC1CF91A38186100E091E6 /* CBVehicleMainViewController.m */,
+				328705481A09E0260090C540 /* CBVehicleViewController.h */,
+				328705491A09E0260090C540 /* CBVehicleViewController.m */,
+				32A59C741A47FA4C007CA3EB /* CBVehicleDetailsViewController.h */,
+				32A59C751A47FA4C007CA3EB /* CBVehicleDetailsViewController.m */,
+				323DDBBD1AA58F9D0055090D /* CBVehicleEditViewController.h */,
+				323DDBBE1AA58F9D0055090D /* CBVehicleEditViewController.m */,
+				3287056E1A0A00490090C540 /* CBAddVehicleFirstViewController.h */,
+				3287056F1A0A00490090C540 /* CBAddVehicleFirstViewController.m */,
+				323F41971A1204A200FC6001 /* CBAddVehicleSecondViewController.h */,
+				323F41981A1204A200FC6001 /* CBAddVehicleSecondViewController.m */,
+				E67AEB091B81B1B2004FF60E /* CBServiceIntervalViewController.h */,
+				E67AEB0A1B81B1B2004FF60E /* CBServiceIntervalViewController.m */,
+				E670EB941B87148100641E82 /* CBImageViewController.h */,
+				E670EB951B87148100641E82 /* CBImageViewController.m */,
+				E687697E1B8AD005008154E1 /* CBIconViewController.h */,
+				E687697F1B8AD005008154E1 /* CBIconViewController.m */,
+				32BC1CDA1A38047400E091E6 /* CBVehicleServiceStationController.h */,
+				32BC1CDB1A38047400E091E6 /* CBVehicleServiceStationController.m */,
+				32BC1CEE1A380A1400E091E6 /* CBVehicleServiceStationAddController.h */,
+				32BC1CEF1A380A1400E091E6 /* CBVehicleServiceStationAddController.m */,
+				32BC1CE41A38070A00E091E6 /* CBVehicleServiceStationViewController.h */,
+				32BC1CE51A38070A00E091E6 /* CBVehicleServiceStationViewController.m */,
+				320E94E11AC966D6009E3FB3 /* CBVehicleServiceStationLogController.h */,
+				320E94E21AC966D6009E3FB3 /* CBVehicleServiceStationLogController.m */,
+				321514001A7F539300A22B4A /* CBVehicleStationDetailController.h */,
+				321514011A7F539300A22B4A /* CBVehicleStationDetailController.m */,
+				32375B8C1A492002007F74D8 /* CBTrackMileageListViewController.h */,
+				32375B8D1A492002007F74D8 /* CBTrackMileageListViewController.m */,
+				32375B961A492145007F74D8 /* CBTrackMileageAddViewController.h */,
+				32375B971A492145007F74D8 /* CBTrackMileageAddViewController.m */,
+				321E23171A52621900F01F77 /* CBTrackMileageViewController.h */,
+				321E23181A52621900F01F77 /* CBTrackMileageViewController.m */,
+				3221BD221A95B43D0059A4DB /* CBVehicleServiceDetailViewController.h */,
+				3221BD231A95B43D0059A4DB /* CBVehicleServiceDetailViewController.m */,
+				3231A6681A9DCCCB00013765 /* CBReportViewController.h */,
+				3231A6691A9DCCCB00013765 /* CBReportViewController.m */,
+				3279CB0B1A5A95E900E1CD20 /* LineChartViewController.h */,
+				3279CB0C1A5A95E900E1CD20 /* LineChartViewController.m */,
+				322773BD1A638752001C5EAA /* CBSettingsViewController.h */,
+				322773BE1A638752001C5EAA /* CBSettingsViewController.m */,
+				3243BC9B1A39A59A008C9797 /* CBMapViewController.h */,
+				3243BC9C1A39A59A008C9797 /* CBMapViewController.m */,
+				322D5D021ABADC0500F6AC09 /* CBAddGasStationViewController.h */,
+				322D5D031ABADC0500F6AC09 /* CBAddGasStationViewController.m */,
+				3221BD251A95B4540059A4DB /* CustomCell.h */,
+				3221BD261A95B4540059A4DB /* CustomCell.m */,
+				323EB4AD1AC3C44400DDB117 /* VehicleAddFirstCustomCell.h */,
+				323EB4AE1AC3C44400DDB117 /* VehicleAddFirstCustomCell.m */,
+				323EB4B71AC3C4F900DDB117 /* VehicleAddSecondCustomCell.h */,
+				323EB4B81AC3C4F900DDB117 /* VehicleAddSecondCustomCell.m */,
+				E62AD7101AF3A269005F790B /* CBExportViewController.h */,
+				E62AD7111AF3A269005F790B /* CBExportViewController.m */,
+				E631E3851AFCD0C7001674F2 /* CBChosenVehicleViewController.h */,
+				E631E3861AFCD0C8001674F2 /* CBChosenVehicleViewController.m */,
+				E631E38A1AFCD109001674F2 /* CBChosenStationViewController.h */,
+				E631E38B1AFCD109001674F2 /* CBChosenStationViewController.m */,
+			);
+			name = ControllerFiles;
+			sourceTree = "<group>";
+		};
+		328705671A09EB5B0090C540 /* iPadViewFiles */ = {
+			isa = PBXGroup;
+			children = (
+				32BC1CFF1A3818AA00E091E6 /* CBVehicleMainViewController_iPad.xib */,
+				32D91AA31A0B9302002484EA /* CBVehicleViewController_iPad.xib */,
+				32A59C7B1A47FA82007CA3EB /* CBVehicleDetailsViewController_iPad.xib */,
+				3221037C1AA8510500FF91B5 /* CBVehicleEditViewController_iPad.xib */,
+				32D91AA81A0B93B3002484EA /* CBAddVehicleFirstViewController_iPad.xib */,
+				323F419E1A1204CD00FC6001 /* CBAddVehicleSecondViewController_iPad.xib */,
+				32BC1CE11A3804C900E091E6 /* CBVehicleServiceStationController_iPad.xib */,
+				32BC1CF51A380A2D00E091E6 /* CBVehicleServiceStationAddController_iPad.xib */,
+				32BC1CEB1A38072D00E091E6 /* CBVehicleServiceStationViewController_iPad.xib */,
+				320E94E81AC9677B009E3FB3 /* CBVehicleServiceStationLogController_iPad.xib */,
+				32375B931A492049007F74D8 /* CBTrackMileageListViewController_iPad.xib */,
+				32375B9D1A49216E007F74D8 /* CBTrackMileageAddViewController_iPad.xib */,
+				321E231E1A52624800F01F77 /* CBTrackMileageViewController_iPad.xib */,
+				3231A66F1A9DDAEB00013765 /* CBReportViewController_iPad.xib */,
+				327AFF781A5A66D40033220E /* LineChartViewController_iPad.xib */,
+				322773C41A6387A3001C5EAA /* CBSettingsViewController_iPad.xib */,
+				3243BCA21A39A5CD008C9797 /* CBMapViewController_iPad.xib */,
+				321513FD1A7F533400A22B4A /* CBVehicleStationDetailController_iPad.xib */,
+				3221BD2C1A95B4C80059A4DB /* CBVehicleServiceDetailViewController_iPad.xib */,
+				322D5D091ABADC5800F6AC09 /* CBAddGasStationViewController_iPad.xib */,
+				3221BD2E1A95B4D30059A4DB /* CustomCell_iPad.xib */,
+				323EB4B41AC3C48900DDB117 /* VehicleAddFirstCustomCell_iPad.xib */,
+				323EB4BE1AC3C52600DDB117 /* VehicleAddSecondCustomCell_iPad.xib */,
+				E62E8C4C1AF7276700CE7A28 /* CBExportViewController_ipad.xib */,
+				E631E3911AFCD1C3001674F2 /* CBChosenStationViewController_ipad.xib */,
+				E631E38F1AFCD19C001674F2 /* CBChosenVehicleViewController_ipad.xib */,
+			);
+			name = iPadViewFiles;
+			sourceTree = "<group>";
+		};
+		328705681A09EB840090C540 /* iPhoneViewFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E6E038E31B7B535C00856AFA /* CBNoVehiclesViewController.xib */,
+				32BC1CFA1A38186100E091E6 /* CBVehicleMainViewController.xib */,
+				3287054A1A09E0260090C540 /* CBVehicleViewController.xib */,
+				32A59C761A47FA4C007CA3EB /* CBVehicleDetailsViewController.xib */,
+				323DDBBF1AA58F9D0055090D /* CBVehicleEditViewController.xib */,
+				328705701A0A00490090C540 /* CBAddVehicleFirstViewController.xib */,
+				323F41991A1204A200FC6001 /* CBAddVehicleSecondViewController.xib */,
+				E670EB961B87148100641E82 /* CBImageViewController.xib */,
+				E68769801B8AD005008154E1 /* CBIconViewController.xib */,
+				E67AEB0B1B81B1B2004FF60E /* CBServiceIntervalViewController.xib */,
+				32BC1CDC1A38047400E091E6 /* CBVehicleServiceStationController.xib */,
+				32BC1CF01A380A1400E091E6 /* CBVehicleServiceStationAddController.xib */,
+				32BC1CE61A38070A00E091E6 /* CBVehicleServiceStationViewController.xib */,
+				320E94E31AC966D6009E3FB3 /* CBVehicleServiceStationLogController.xib */,
+				32375B8E1A492002007F74D8 /* CBTrackMileageListViewController.xib */,
+				32375B981A492145007F74D8 /* CBTrackMileageAddViewController.xib */,
+				321E23191A52621900F01F77 /* CBTrackMileageViewController.xib */,
+				3231A66A1A9DCCCB00013765 /* CBReportViewController.xib */,
+				3279CB0D1A5A95E900E1CD20 /* LineChartViewController.xib */,
+				322773BF1A638752001C5EAA /* CBSettingsViewController.xib */,
+				3243BC9D1A39A59A008C9797 /* CBMapViewController.xib */,
+				321514021A7F539300A22B4A /* CBVehicleStationDetailController.xib */,
+				3221BD281A95B4A50059A4DB /* CBVehicleServiceDetailViewController.xib */,
+				322D5D041ABADC0500F6AC09 /* CBAddGasStationViewController.xib */,
+				3221BD2A1A95B4AE0059A4DB /* CustomCell.xib */,
+				323EB4AF1AC3C44400DDB117 /* VehicleAddFirstCustomCell.xib */,
+				323EB4B91AC3C4F900DDB117 /* VehicleAddSecondCustomCell.xib */,
+				E62AD7121AF3A269005F790B /* CBExportViewController.xib */,
+				E631E3871AFCD0C8001674F2 /* CBChosenVehicleViewController.xib */,
+				E631E38C1AFCD109001674F2 /* CBChosenStationViewController.xib */,
+			);
+			name = iPhoneViewFiles;
+			sourceTree = "<group>";
+		};
+		3292BC3C1A0C7885004B7314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E61A59DD1B8ECEAF0077C603 /* CoreGraphics.framework */,
+				323D797D1AB6BAA700DF95D7 /* CFNetwork.framework */,
+				322B17781AAF047C001C6E28 /* MessageUI.framework */,
+				322773C71A63BA4E001C5EAA /* EventKit.framework */,
+				3261CB1A1A5A8EA000D60837 /* CoreData.framework */,
+				3261CB181A5A8C0400D60837 /* libz.dylib */,
+				321A885B1A370DD600FBDF4C /* CoreLocation.framework */,
+				327AFF841A5A70C40033220E /* QuartzCore.framework */,
+				32D9ADE91A402F18007F3D84 /* AssetsLibrary.framework */,
+				32BC1CD81A3801AA00E091E6 /* MapKit.framework */,
+				321A885D1A370DE200FBDF4C /* MobileCoreServices.framework */,
+				3292BC3D1A0C7993004B7314 /* UIKit.framework */,
+				3292BC3A1A0C7854004B7314 /* AVFoundation.framework */,
+				3292BC381A0C7822004B7314 /* Security.framework */,
+				3292BC361A0C780F004B7314 /* Foundation.framework */,
+				3287056C1A09FD620090C540 /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C588B71AC0180900FFFE7F /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				32C588B81AC0183300FFFE7F /* Reachability.h */,
+				32C588B91AC0183300FFFE7F /* Reachability.m */,
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3287051E1A09DF380090C540 /* CarBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328705421A09DF380090C540 /* Build configuration list for PBXNativeTarget "CarBook" */;
+			buildPhases = (
+				3287051B1A09DF380090C540 /* Sources */,
+				3287051C1A09DF380090C540 /* Frameworks */,
+				3287051D1A09DF380090C540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarBook;
+			productName = CarBook;
+			productReference = 3287051F1A09DF380090C540 /* CarBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		328705371A09DF380090C540 /* CarBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328705451A09DF380090C540 /* Build configuration list for PBXNativeTarget "CarBookTests" */;
+			buildPhases = (
+				328705341A09DF380090C540 /* Sources */,
+				328705351A09DF380090C540 /* Frameworks */,
+				328705361A09DF380090C540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3287053A1A09DF380090C540 /* PBXTargetDependency */,
+			);
+			name = CarBookTests;
+			productName = CarBookTests;
+			productReference = 328705381A09DF380090C540 /* CarBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		328705171A09DF380090C540 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Raja Sekhar";
+				TargetAttributes = {
+					3287051E1A09DF380090C540 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					328705371A09DF380090C540 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3287051E1A09DF380090C540;
+					};
+				};
+			};
+			buildConfigurationList = 3287051A1A09DF380090C540 /* Build configuration list for PBXProject "CarBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 328705161A09DF380090C540;
+			productRefGroup = 328705201A09DF380090C540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3287051E1A09DF380090C540 /* CarBook */,
+				328705371A09DF380090C540 /* CarBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3287051D1A09DF380090C540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BC1CF71A380A2D00E091E6 /* CBVehicleServiceStationAddController_iPad.xib in Resources */,
+				323EB4B61AC3C48900DDB117 /* VehicleAddFirstCustomCell_iPad.xib in Resources */,
+				323EB4C01AC3C52600DDB117 /* VehicleAddSecondCustomCell_iPad.xib in Resources */,
+				32A59C7D1A47FA82007CA3EB /* CBVehicleDetailsViewController_iPad.xib in Resources */,
+				E621553F1B0B13EF0087C4F2 /* MapPin.png in Resources */,
+				32375B9A1A492145007F74D8 /* CBTrackMileageAddViewController.xib in Resources */,
+				32BC1CF21A380A1400E091E6 /* CBVehicleServiceStationAddController.xib in Resources */,
+				322D5D061ABADC0500F6AC09 /* CBAddGasStationViewController.xib in Resources */,
+				321513FF1A7F533400A22B4A /* CBVehicleStationDetailController_iPad.xib in Resources */,
+				32D91AA51A0B9302002484EA /* CBVehicleViewController_iPad.xib in Resources */,
+				32BC1D011A3818AA00E091E6 /* CBVehicleMainViewController_iPad.xib in Resources */,
+				32A93F141A6F82AA0021CD2B /* Red.png in Resources */,
+				E616BF441B539A6000197009 /* clock.png in Resources */,
+				3243BC9F1A39A59A008C9797 /* CBMapViewController.xib in Resources */,
+				3231A66C1A9DCCCB00013765 /* CBReportViewController.xib in Resources */,
+				E610DDD51B03750300ECD3AC /* Report_trim.png in Resources */,
+				321E231B1A52621900F01F77 /* CBTrackMileageViewController.xib in Resources */,
+				321E23201A52624800F01F77 /* CBTrackMileageViewController_iPad.xib in Resources */,
+				32375B951A492049007F74D8 /* CBTrackMileageListViewController_iPad.xib in Resources */,
+				E61240071B01DA15000963D4 /* mileagewithouttext.png in Resources */,
+				328705721A0A00490090C540 /* CBAddVehicleFirstViewController.xib in Resources */,
+				3287054C1A09E0260090C540 /* CBVehicleViewController.xib in Resources */,
+				322773C61A6387A3001C5EAA /* CBSettingsViewController_iPad.xib in Resources */,
+				322773C11A638752001C5EAA /* CBSettingsViewController.xib in Resources */,
+				328705651A09E7FD0090C540 /* strings.plist in Resources */,
+				E62AD7141AF3A269005F790B /* CBExportViewController.xib in Resources */,
+				32A59C781A47FA4C007CA3EB /* CBVehicleDetailsViewController.xib in Resources */,
+				3231A6711A9DDAEB00013765 /* CBReportViewController_iPad.xib in Resources */,
+				E61240061B01DA15000963D4 /* mileage.png in Resources */,
+				320E94E51AC966D6009E3FB3 /* CBVehicleServiceStationLogController.xib in Resources */,
+				E610DDC31B036E5A00ECD3AC /* arrow.png in Resources */,
+				323F41A01A1204CD00FC6001 /* CBAddVehicleSecondViewController_iPad.xib in Resources */,
+				323EB4B11AC3C44400DDB117 /* VehicleAddFirstCustomCell.xib in Resources */,
+				32D91AAA1A0B93B3002484EA /* CBAddVehicleFirstViewController_iPad.xib in Resources */,
+				3292BC401A0C79C4004B7314 /* Default-568h@2x.png in Resources */,
+				E6E038E51B7B535C00856AFA /* CBNoVehiclesViewController.xib in Resources */,
+				E61240031B01DA15000963D4 /* Settings.png in Resources */,
+				32274CB21A934432001BECC9 /* settings_icon.png in Resources */,
+				E610DDD71B03750300ECD3AC /* vehicles_trim.png in Resources */,
+				323DDBC11AA58F9D0055090D /* CBVehicleEditViewController.xib in Resources */,
+				3221BD2F1A95B4D30059A4DB /* CustomCell_iPad.xib in Resources */,
+				323EB4BB1AC3C4F900DDB117 /* VehicleAddSecondCustomCell.xib in Resources */,
+				3279CB0F1A5A95E900E1CD20 /* LineChartViewController.xib in Resources */,
+				321514041A7F539300A22B4A /* CBVehicleStationDetailController.xib in Resources */,
+				3221BD291A95B4A50059A4DB /* CBVehicleServiceDetailViewController.xib in Resources */,
+				E610DDD41B03750300ECD3AC /* Map_trim.png in Resources */,
+				32C588B61ABFF17100FFFE7F /* gas_station-50.png in Resources */,
+				32BC1CFC1A38186100E091E6 /* CBVehicleMainViewController.xib in Resources */,
+				E61240021B01DA15000963D4 /* About.png in Resources */,
+				E631E3891AFCD0C8001674F2 /* CBChosenVehicleViewController.xib in Resources */,
+				32375B9F1A49216E007F74D8 /* CBTrackMileageAddViewController_iPad.xib in Resources */,
+				E631E38E1AFCD109001674F2 /* CBChosenStationViewController.xib in Resources */,
+				E631E3921AFCD1C3001674F2 /* CBChosenStationViewController_ipad.xib in Resources */,
+				3243BCA41A39A5CD008C9797 /* CBMapViewController_iPad.xib in Resources */,
+				E68769821B8AD005008154E1 /* CBIconViewController.xib in Resources */,
+				E612400A1B01DA15000963D4 /* service.png in Resources */,
+				E67578261B54FA46002DADB5 /* arrowup.png in Resources */,
+				E610DDD61B03750300ECD3AC /* Stations_trim.png in Resources */,
+				32BC1CDE1A38047400E091E6 /* CBVehicleServiceStationController.xib in Resources */,
+				32BC1CE31A3804C900E091E6 /* CBVehicleServiceStationController_iPad.xib in Resources */,
+				E610DDD31B03750300ECD3AC /* Export_trim.png in Resources */,
+				E616BF3F1B538D5900197009 /* segment_arrow@2x.png in Resources */,
+				32BC1CE81A38070A00E091E6 /* CBVehicleServiceStationViewController.xib in Resources */,
+				32A93F121A6F82AA0021CD2B /* Yellow.png in Resources */,
+				320E94EA1AC9677B009E3FB3 /* CBVehicleServiceStationLogController_iPad.xib in Resources */,
+				3221BD2B1A95B4AE0059A4DB /* CustomCell.xib in Resources */,
+				3221037E1AA8510500FF91B5 /* CBVehicleEditViewController_iPad.xib in Resources */,
+				322D5D0B1ABADC5800F6AC09 /* CBAddGasStationViewController_iPad.xib in Resources */,
+				3221BD2D1A95B4C80059A4DB /* CBVehicleServiceDetailViewController_iPad.xib in Resources */,
+				323FA5F71A43E6EF009D8B33 /* arrow_down.png in Resources */,
+				E670EB981B87148100641E82 /* CBImageViewController.xib in Resources */,
+				32BC1CED1A38072D00E091E6 /* CBVehicleServiceStationViewController_iPad.xib in Resources */,
+				32375B901A492002007F74D8 /* CBTrackMileageListViewController.xib in Resources */,
+				E62E8C4D1AF7276700CE7A28 /* CBExportViewController_ipad.xib in Resources */,
+				E67AEB0D1B81B1B2004FF60E /* CBServiceIntervalViewController.xib in Resources */,
+				323F419B1A1204A200FC6001 /* CBAddVehicleSecondViewController.xib in Resources */,
+				E67F07911B8D8D47009306C2 /* arrow-blue.png in Resources */,
+				328705301A09DF380090C540 /* Images.xcassets in Resources */,
+				E631E3901AFCD19C001674F2 /* CBChosenVehicleViewController_ipad.xib in Resources */,
+				327AFF7A1A5A66D40033220E /* LineChartViewController_iPad.xib in Resources */,
+				32274CB41A9344E7001BECC9 /* settings_icon@2x.png in Resources */,
+				E616BF3E1B538D5900197009 /* segment_arrow.png in Resources */,
+				E6123FE51B01B1C1000963D4 /* HomePage-bg.png in Resources */,
+				32A93F131A6F82AA0021CD2B /* Green.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328705361A09DF380090C540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3287051B1A09DF380090C540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323EB4BA1AC3C4F900DDB117 /* VehicleAddSecondCustomCell.m in Sources */,
+				3287054B1A09E0260090C540 /* CBVehicleViewController.m in Sources */,
+				3231A66B1A9DCCCB00013765 /* CBReportViewController.m in Sources */,
+				32BC1CDD1A38047400E091E6 /* CBVehicleServiceStationController.m in Sources */,
+				32BC1CE71A38070A00E091E6 /* CBVehicleServiceStationViewController.m in Sources */,
+				328705611A09E7A00090C540 /* CBStrings.m in Sources */,
+				32396FC81AA044A500EF8125 /* CPDConstants.m in Sources */,
+				32396FCD1AA046E500EF8125 /* CPDStockPriceStore.m in Sources */,
+				323EB4B01AC3C44400DDB117 /* VehicleAddFirstCustomCell.m in Sources */,
+				E60FDD711AFA2F580038F208 /* CHCSVParser.m in Sources */,
+				E62AD7131AF3A269005F790B /* CBExportViewController.m in Sources */,
+				328705711A0A00490090C540 /* CBAddVehicleFirstViewController.m in Sources */,
+				323F419A1A1204A200FC6001 /* CBAddVehicleSecondViewController.m in Sources */,
+				E670EB971B87148100641E82 /* CBImageViewController.m in Sources */,
+				32C588BA1AC0183300FFFE7F /* Reachability.m in Sources */,
+				32A59C771A47FA4C007CA3EB /* CBVehicleDetailsViewController.m in Sources */,
+				328705621A09E7A00090C540 /* CBDBMethods.m in Sources */,
+				3287055B1A09E7680090C540 /* FMResultSet.m in Sources */,
+				3221BD241A95B43D0059A4DB /* CBVehicleServiceDetailViewController.m in Sources */,
+				32BC1CF11A380A1400E091E6 /* CBVehicleServiceStationAddController.m in Sources */,
+				E631E38D1AFCD109001674F2 /* CBChosenStationViewController.m in Sources */,
+				322773C01A638752001C5EAA /* CBSettingsViewController.m in Sources */,
+				323DDBC01AA58F9D0055090D /* CBVehicleEditViewController.m in Sources */,
+				E616BF421B53921F00197009 /* SDSegmentedControl.m in Sources */,
+				E631E3881AFCD0C8001674F2 /* CBChosenVehicleViewController.m in Sources */,
+				E68769811B8AD005008154E1 /* CBIconViewController.m in Sources */,
+				321E231A1A52621900F01F77 /* CBTrackMileageViewController.m in Sources */,
+				E61A59D11B8ECC0D0077C603 /* ImageUtils.m in Sources */,
+				E61A59D01B8ECC0D0077C603 /* OverlayView.m in Sources */,
+				320E94E41AC966D6009E3FB3 /* CBVehicleServiceStationLogController.m in Sources */,
+				328705281A09DF380090C540 /* AppDelegate.m in Sources */,
+				328705591A09E7680090C540 /* FMDatabase.m in Sources */,
+				322D5D051ABADC0500F6AC09 /* CBAddGasStationViewController.m in Sources */,
+				32375B991A492145007F74D8 /* CBTrackMileageAddViewController.m in Sources */,
+				3238A2BB1A3AA8C80094631E /* MapViewAnnotation.m in Sources */,
+				3279CB0E1A5A95E900E1CD20 /* LineChartViewController.m in Sources */,
+				328705251A09DF380090C540 /* main.m in Sources */,
+				E61A59D81B8ECC9D0077C603 /* UIImage+RoundedCorner.m in Sources */,
+				E61A59DA1B8ECC9D0077C603 /* UIImage+Alpha.m in Sources */,
+				3221BD271A95B4540059A4DB /* CustomCell.m in Sources */,
+				3287055A1A09E7680090C540 /* FMDatabaseAdditions.m in Sources */,
+				32375B8F1A492002007F74D8 /* CBTrackMileageListViewController.m in Sources */,
+				3243BC9E1A39A59A008C9797 /* CBMapViewController.m in Sources */,
+				321514031A7F539300A22B4A /* CBVehicleStationDetailController.m in Sources */,
+				E6E038E41B7B535C00856AFA /* CBNoVehiclesViewController.m in Sources */,
+				32A93F0E1A6F7F210021CD2B /* NSDate+TimeAgo.m in Sources */,
+				32BC1CFB1A38186100E091E6 /* CBVehicleMainViewController.m in Sources */,
+				3287056B1A09F2820090C540 /* Constants.m in Sources */,
+				3243BC9A1A397332008C9797 /* MBProgressHUD.m in Sources */,
+				E67AEB0C1B81B1B2004FF60E /* CBServiceIntervalViewController.m in Sources */,
+				E61A59D91B8ECC9D0077C603 /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328705341A09DF380090C540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3287053F1A09DF380090C540 /* CarBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3287053A1A09DF380090C540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3287051E1A09DF380090C540 /* CarBook */;
+			targetProxy = 328705391A09DF380090C540 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		328705401A09DF380090C540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		328705411A09DF380090C540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		328705431A09DF380090C540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CarBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarBook/CorePlotHeaders",
+					"$(PROJECT_DIR)/CarBook",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bffac8b3-edd7-4cfc-9085-b2880792ac58";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		328705441A09DF380090C540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CarBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarBook/CorePlotHeaders",
+					"$(PROJECT_DIR)/CarBook",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bffac8b3-edd7-4cfc-9085-b2880792ac58";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		328705461A09DF380090C540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CarBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBook.app/CarBook";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		328705471A09DF380090C540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CarBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBook.app/CarBook";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3287051A1A09DF380090C540 /* Build configuration list for PBXProject "CarBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328705401A09DF380090C540 /* Debug */,
+				328705411A09DF380090C540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328705421A09DF380090C540 /* Build configuration list for PBXNativeTarget "CarBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328705431A09DF380090C540 /* Debug */,
+				328705441A09DF380090C540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328705451A09DF380090C540 /* Build configuration list for PBXNativeTarget "CarBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328705461A09DF380090C540 /* Debug */,
+				328705471A09DF380090C540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 328705171A09DF380090C540 /* Project object */;
+}

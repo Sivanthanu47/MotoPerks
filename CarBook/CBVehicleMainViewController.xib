@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBVehicleMainViewController">
+            <connections>
+                <outlet property="notificationLabel" destination="syV-BQ-CFe" id="emg-0l-vHq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6E-4v-Lx8">
+                    <rect key="frame" x="27" y="69" width="100" height="98"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="pV1-li-JOX"/>
+                    </constraints>
+                    <state key="normal" image="mileage.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadMileageView:" destination="-1" eventType="touchUpInside" id="EOT-N2-LPB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUX-MY-ngS">
+                    <rect key="frame" x="193" y="69" width="100" height="98"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="uai-Dr-ygS"/>
+                    </constraints>
+                    <state key="normal" image="service.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadServiceView:" destination="-1" eventType="touchUpInside" id="KLl-vw-Dqt"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="15" sectionFooterHeight="15" translatesAutoresizingMaskIntoConstraints="NO" id="kyg-Bt-nRg">
+                    <rect key="frame" x="0.0" y="207" width="320" height="273"/>
+                    <color key="separatorColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DYk-yb-eKQ"/>
+                        <outlet property="delegate" destination="-1" id="OTL-9Z-2jE"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syV-BQ-CFe">
+                    <rect key="frame" x="0.0" y="167" width="320" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Kdi-5P-zN9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="f6E-4v-Lx8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="7V0-NM-6xR"/>
+                <constraint firstItem="aUX-MY-ngS" firstAttribute="leading" secondItem="f6E-4v-Lx8" secondAttribute="trailing" constant="66" id="A11-Nw-Kci"/>
+                <constraint firstItem="kyg-Bt-nRg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BVw-7s-UFL"/>
+                <constraint firstAttribute="bottom" secondItem="kyg-Bt-nRg" secondAttribute="bottom" id="DNM-qI-kZp"/>
+                <constraint firstItem="syV-BQ-CFe" firstAttribute="trailing" secondItem="kyg-Bt-nRg" secondAttribute="trailing" id="Dj7-J9-zkS"/>
+                <constraint firstItem="aUX-MY-ngS" firstAttribute="top" secondItem="f6E-4v-Lx8" secondAttribute="top" id="Dp3-8f-rZz"/>
+                <constraint firstItem="kyg-Bt-nRg" firstAttribute="top" secondItem="syV-BQ-CFe" secondAttribute="bottom" id="OW2-2G-ppu"/>
+                <constraint firstItem="syV-BQ-CFe" firstAttribute="leading" secondItem="kyg-Bt-nRg" secondAttribute="leading" id="ZFp-u7-Ksn"/>
+                <constraint firstItem="syV-BQ-CFe" firstAttribute="top" secondItem="aUX-MY-ngS" secondAttribute="bottom" id="ZPw-f2-mLk"/>
+                <constraint firstItem="syV-BQ-CFe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="167" id="e3E-BL-pvn"/>
+                <constraint firstAttribute="trailing" secondItem="aUX-MY-ngS" secondAttribute="trailing" constant="27" id="oh4-Oi-fHo"/>
+                <constraint firstItem="aUX-MY-ngS" firstAttribute="bottom" secondItem="f6E-4v-Lx8" secondAttribute="bottom" id="qpt-0E-HqQ"/>
+                <constraint firstItem="kyg-Bt-nRg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xjw-bJ-cIw"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mileage.png" width="296" height="294"/>
+        <image name="service.png" width="243" height="242"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

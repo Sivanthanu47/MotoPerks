@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBVehicleServiceStationAddController">
+            <connections>
+                <outlet property="tblSSAdd" destination="GIU-9J-yOF" id="S31-qu-Smr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-Cd-007">
+                    <rect key="frame" x="0.0" y="438" width="320" height="42"/>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.65490196079999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="GSk-QO-8hI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveServiceStations:" destination="-1" eventType="touchUpInside" id="6n7-NL-LRW"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="GIU-9J-yOF">
+                    <rect key="frame" x="2" y="67" width="316" height="363"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7dx-nr-ldl"/>
+                        <outlet property="delegate" destination="-1" id="bDq-eV-Col"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6Il-Cd-007" secondAttribute="bottom" id="IBw-RG-83q"/>
+                <constraint firstAttribute="trailing" secondItem="GIU-9J-yOF" secondAttribute="trailing" constant="2" id="LIU-mW-mMD"/>
+                <constraint firstItem="GIU-9J-yOF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="NgS-ef-27d"/>
+                <constraint firstItem="6Il-Cd-007" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eoQ-k4-K0J"/>
+                <constraint firstItem="6Il-Cd-007" firstAttribute="centerX" secondItem="GIU-9J-yOF" secondAttribute="centerX" id="q35-Ct-Wji"/>
+                <constraint firstItem="6Il-Cd-007" firstAttribute="top" secondItem="GIU-9J-yOF" secondAttribute="bottom" constant="8" symbolic="YES" id="r4i-9c-G8c"/>
+                <constraint firstItem="GIU-9J-yOF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="z6L-L5-a8m"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

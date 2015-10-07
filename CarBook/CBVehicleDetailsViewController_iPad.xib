@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBVehicleDetailsViewController">
+            <connections>
+                <outlet property="tblVehicle" destination="onb-xe-vxD" id="gwe-69-viD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="8Zi-Mg-nb5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUS-yh-iJB">
+                    <rect key="frame" x="0.0" y="65" width="768" height="959"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="onb-xe-vxD">
+                    <rect key="frame" x="0.0" y="65" width="768" height="888"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4RM-LB-RYt"/>
+                        <outlet property="delegate" destination="-1" id="Cie-rq-ORi"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zy1-IB-0GQ">
+                    <rect key="frame" x="284" y="969" width="200" height="42"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" red="0.80392163989999998" green="0.14901961389999999" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteVehicle:" destination="-1" eventType="touchUpInside" id="e4j-zV-jNe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zy1-IB-0GQ" firstAttribute="top" secondItem="onb-xe-vxD" secondAttribute="bottom" constant="16" id="ClD-dt-KT8"/>
+                <constraint firstAttribute="trailing" secondItem="Zy1-IB-0GQ" secondAttribute="trailing" constant="284" id="GOA-Ux-cwt"/>
+                <constraint firstItem="YUS-yh-iJB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GiJ-fn-MIQ"/>
+                <constraint firstItem="onb-xe-vxD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IYw-JD-jYe"/>
+                <constraint firstAttribute="trailing" secondItem="YUS-yh-iJB" secondAttribute="trailing" id="Ik7-af-xQY"/>
+                <constraint firstItem="Zy1-IB-0GQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="284" id="WVk-Kz-FAd"/>
+                <constraint firstItem="YUS-yh-iJB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="aXk-xc-IRb"/>
+                <constraint firstItem="onb-xe-vxD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="g9V-LU-uyX"/>
+                <constraint firstAttribute="bottom" secondItem="YUS-yh-iJB" secondAttribute="bottom" id="lUm-vv-8mb"/>
+                <constraint firstItem="Zy1-IB-0GQ" firstAttribute="top" secondItem="onb-xe-vxD" secondAttribute="bottom" constant="16" id="nEa-c5-koJ"/>
+                <constraint firstAttribute="trailing" secondItem="onb-xe-vxD" secondAttribute="trailing" id="o7N-Pf-sX9"/>
+                <constraint firstAttribute="bottom" secondItem="Zy1-IB-0GQ" secondAttribute="bottom" constant="13" id="ybl-5n-Y9k"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HomePage-bg.png" width="640" height="1090"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

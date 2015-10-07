@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBVehicleViewController">
+            <connections>
+                <outlet property="searchbar" destination="Cbe-tn-WUN" id="br7-4G-Gn2"/>
+                <outlet property="tblCar" destination="TIr-nb-fTf" id="kdv-u6-8dU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search Vehicle" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cbe-tn-WUN">
+                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="z1B-MZ-GIV"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="15" sectionFooterHeight="15" translatesAutoresizingMaskIntoConstraints="NO" id="TIr-nb-fTf">
+                    <rect key="frame" x="6" y="114" width="308" height="448"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uHC-3C-4Bl"/>
+                        <outlet property="delegate" destination="-1" id="MPy-cc-dKO"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Cbe-tn-WUN" firstAttribute="centerX" secondItem="TIr-nb-fTf" secondAttribute="centerX" id="5Pa-80-SkD"/>
+                <constraint firstAttribute="bottom" secondItem="TIr-nb-fTf" secondAttribute="bottom" constant="6" id="Q3I-R9-yzy"/>
+                <constraint firstItem="Cbe-tn-WUN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="RDP-qV-pUA"/>
+                <constraint firstAttribute="trailing" secondItem="TIr-nb-fTf" secondAttribute="trailing" constant="6" id="Tb6-NT-Q0T"/>
+                <constraint firstItem="TIr-nb-fTf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="aWX-s2-YxM"/>
+                <constraint firstItem="Cbe-tn-WUN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="auH-qm-ubb"/>
+                <constraint firstItem="TIr-nb-fTf" firstAttribute="top" secondItem="Cbe-tn-WUN" secondAttribute="bottom" constant="6" id="qWZ-oS-Gpg"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

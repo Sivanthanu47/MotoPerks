@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBVehicleViewController">
+            <connections>
+                <outlet property="searchbar" destination="lRX-IB-Kkc" id="EWK-Uq-6mw"/>
+                <outlet property="tblCar" destination="ENh-rB-Chk" id="Flt-Zm-A3P"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="fDm-Ur-CEL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="oWQ-II-qwm">
+                    <rect key="frame" x="0.0" y="65" width="768" height="959"/>
+                </imageView>
+                <searchBar contentMode="redraw" placeholder="Search Vehicle" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lRX-IB-Kkc">
+                    <rect key="frame" x="0.0" y="65" width="768" height="44"/>
+                    <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="5hL-ES-MgI"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ENh-rB-Chk">
+                    <rect key="frame" x="0.0" y="109" width="768" height="915"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sf9-oZ-rA5"/>
+                        <outlet property="delegate" destination="-1" id="Tl4-BQ-p9f"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ENh-rB-Chk" secondAttribute="bottom" id="1l9-a2-azO"/>
+                <constraint firstItem="lRX-IB-Kkc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Lu-JN-Pnw"/>
+                <constraint firstItem="oWQ-II-qwm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9G8-Xf-3JK"/>
+                <constraint firstAttribute="trailing" secondItem="ENh-rB-Chk" secondAttribute="trailing" id="D6X-uP-pCb"/>
+                <constraint firstItem="lRX-IB-Kkc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="b4n-15-im8"/>
+                <constraint firstItem="oWQ-II-qwm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="ciu-v8-IRy"/>
+                <constraint firstAttribute="trailing" secondItem="lRX-IB-Kkc" secondAttribute="trailing" id="gEZ-j6-RG1"/>
+                <constraint firstItem="ENh-rB-Chk" firstAttribute="top" secondItem="lRX-IB-Kkc" secondAttribute="bottom" id="gdz-gu-LPd"/>
+                <constraint firstItem="ENh-rB-Chk" firstAttribute="top" secondItem="lRX-IB-Kkc" secondAttribute="bottom" id="kg8-vc-aNl"/>
+                <constraint firstAttribute="trailing" secondItem="oWQ-II-qwm" secondAttribute="trailing" id="tVY-9m-osq"/>
+                <constraint firstAttribute="bottom" secondItem="oWQ-II-qwm" secondAttribute="bottom" id="x3H-hd-Mcy"/>
+                <constraint firstItem="ENh-rB-Chk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y4j-Yc-cTl"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HomePage-bg.png" width="640" height="1090"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

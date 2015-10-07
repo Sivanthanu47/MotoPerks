@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBExportViewController">
+            <connections>
+                <outlet property="exportTable" destination="mFJ-ws-yEk" id="9zi-3P-vOD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-ws-yEk">
+                    <rect key="frame" x="6" y="71" width="308" height="491"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6p1-xd-rl8"/>
+                        <outlet property="delegate" destination="-1" id="fgM-UR-gg2"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mFJ-ws-yEk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="1ia-iU-mfr"/>
+                <constraint firstAttribute="trailing" secondItem="mFJ-ws-yEk" secondAttribute="trailing" constant="6" id="5PS-5q-lOI"/>
+                <constraint firstAttribute="bottom" secondItem="mFJ-ws-yEk" secondAttribute="bottom" constant="6" id="653-dg-SfP"/>
+                <constraint firstItem="mFJ-ws-yEk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="B1f-bc-DIa"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

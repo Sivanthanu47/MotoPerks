@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app_name</key>
+	<string>Car Perks</string>
+	<key>Main_Name</key>
+	<string>MotoPerks</string>
+	<key>PageTitles</key>
+	<dict>
+		<key>ExportPage</key>
+		<string>Export</string>
+		<key>HomePage</key>
+		<string>Vehicle</string>
+		<key>AddVehiclePage</key>
+		<string>Add Vehicle</string>
+		<key>StationsPage</key>
+		<string>Service Stations</string>
+		<key>StationAddPage</key>
+		<string>Add Service Station</string>
+		<key>StationEditPage</key>
+		<string>Edit Serivce Station</string>
+		<key>StationViewPage</key>
+		<string>Service Station</string>
+		<key>TrackPage</key>
+		<string>Track Mileage</string>
+		<key>TrackAddPage</key>
+		<string>Add Fuel</string>
+		<key>GraphPage</key>
+		<string>Chart List</string>
+		<key>SettingsPage</key>
+		<string>Configuration</string>
+		<key>ServiceDetailsPage</key>
+		<string>Service Details</string>
+		<key>ServiceAddPage</key>
+		<string>Add Service</string>
+		<key>ReportPage</key>
+		<string>Report</string>
+		<key>VehicleEditPage</key>
+		<string>Edit Vehicle</string>
+		<key>GasPage</key>
+		<string>Gas Stations</string>
+		<key>StationLogPage</key>
+		<string>Station Logs</string>
+	</dict>
+	<key>AlertMessage</key>
+	<dict>
+		<key>requestAlwaysAuthorization</key>
+		<string>Loction is used to identify a page.</string>
+		<key>AddVehicleDetail</key>
+		<string>Vehicle&apos;s detail is added successfully.</string>
+		<key>UpdateVehicle</key>
+		<string>Vehicle&apos;s detail is updated successfully.</string>
+		<key>ErrorAddVehicleDetail</key>
+		<string>You must complete all fields.</string>
+		<key>NoNetwork</key>
+		<string>No Internet Connection Available.</string>
+		<key>NoText</key>
+		<string>Should not be blank these fields.</string>
+		<key>AddServiceStation</key>
+		<string>Service station is added successfully.</string>
+		<key>AddTrack</key>
+		<string>Track Mileage is added successfully.</string>
+		<key>alertCamera</key>
+		<string>Please allow the CarBook to access your photo and videos in Settings.</string>
+		<key>deleteVehicle</key>
+		<string>Do you want delete this vehicle?</string>
+		<key>deleteTrack</key>
+		<string>Do you want delete this tracked mileage?</string>
+		<key>emptyTrack</key>
+		<string>This vehicle didn&apos;t yet tracked.</string>
+		<key>lowValue</key>
+		<string>Please check your current meter.</string>
+		<key>DeleteServiceType</key>
+		<string>Do you want delete this service type?</string>
+		<key>AddServiceDetail</key>
+		<string>Service is added successfully.</string>
+		<key>deleteStation</key>
+		<string>Do you want delete this service station?</string>
+		<key>updateStation</key>
+		<string>Service station is updated successfully.</string>
+		<key>alertMailComposer</key>
+		<string>Your device doesn&apos;t support the composer sheet. Please add your account.</string>
+		<key>alertMessageComposer</key>
+		<string>Your device doesn&apos;t support SMS!</string>
+		<key>alertLocation</key>
+		<string>The location is not available.</string>
+		<key>AlreadyStation</key>
+		<string>Already has exit this service station.</string>
+	</dict>
+</dict>
+</plist>
