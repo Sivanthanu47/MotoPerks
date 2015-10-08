@@ -30,17 +30,14 @@ NSArray *cellNib;
 int ImgEdgeHieght;
 UIImage *chosenImage;
 @implementation CBAddVehicleFirstViewController
-@synthesize dictData;
 - (void)viewDidLoad {
     [super viewDidLoad];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
-    strReg = @"Registration Date",strPhotoURL = @"",strInsDate = @"Date",chosenImage = nil;
-    dictData = [[NSMutableDictionary alloc] init];
+    strReg = @"Registration Date",strInsDate = @"Date",strFuelType = @"Fuel Type";
     arrFuelType = [NSArray arrayWithObjects:@"Petrol",@"Diesel",@"Gasoline", nil];
-   
 }
 - (void)viewWillAppear:(BOOL)animated {
     pickerHieght = 216;
@@ -53,10 +50,7 @@ UIImage *chosenImage;
     }
     [self setNavigationBar];
     [self customViewCreate];
-    if ([dictData count] > 0) {
-        [self loadView];
-         [tblAddFirst reloadData];
-    }
+    [tblAddFirst reloadData];
 }
 - (void)setNavigationBar {
     self.navigationController.navigationBar.translucent = YES;
@@ -140,6 +134,7 @@ UIImage *chosenImage;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     cellView = (VehicleAddFirstCustomCell *)[tableView dequeueReusableCellWithIdentifier:@"VehicleAddFirstIdentifier"];
     if (cellView == nil) {
@@ -150,68 +145,34 @@ UIImage *chosenImage;
         }
         cellView = (VehicleAddFirstCustomCell *)[cellNib lastObject];
         [cellView setSelectionStyle:UITableViewCellSelectionStyleNone];
-    }
-    [cellView.btnFuelType setTitle:strFuelType forState:UIControlStateNormal];
-    [cellView.btnDate setTitle:strInsDate forState:UIControlStateNormal];
-    [cellView.btnReg setTitle:strReg forState:UIControlStateNormal];
-    cellView.backgroundColor = [UIColor clearColor];
-    UIImage *img = [UIImage imageNamed:@"arrow_down.png"];
-    cellView.txtOwner.delegate = self;
-    if ([dictData objectForKey:@"Owner"]) {
-        cellView.txtOwner.text = [dictData objectForKey:@"Owner"];
-    }
-       cellView.txtCarName.delegate = self;
-    if ([dictData objectForKey:@"CarName"]) {
-        cellView.txtCarName.text = [dictData objectForKey:@"CarName"];
-    }
-  
-   cellView.Address.text = @"Address";
-   cellView.Address.textColor = [UIColor blackColor];
-   cellView.Address.delegate = self;
-    if ([dictData objectForKey:@"Address"]) {
-        cellView.Address.text = [dictData objectForKey:@"Address"];
-    }
-    [cellView.btnReg setTitle:@"Registration Date" forState:UIControlStateNormal];
-    [cellView.btnReg.layer setBorderWidth:1.0];
-    [cellView.btnReg.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
-    [cellView.btnReg addTarget:self action:@selector(showDatePicker:) forControlEvents:UIControlEventTouchUpInside];
-    [cellView.btnReg setImage:img forState:UIControlStateNormal];
-    [cellView.btnReg setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
-    [cellView.btnReg setTitleEdgeInsets:UIEdgeInsetsMake(0,-(img.size.width - 5),0,0)];
-    NSString *regDate = [NSString stringWithFormat:@"%@",[dictData objectForKey:@"RegisterDate"]];
-    if (regDate == nil || [regDate isEqual:@"(null)"]) {
-        [cellView.btnReg setTitle:@"Registration Date" forState:UIControlStateNormal];
-    } else {
-        [cellView.btnReg setTitle:regDate forState:UIControlStateNormal];
-    }
-    cellView.txtCMRead.delegate = self;
-    if ([dictData objectForKey:@"CMStartRead"]) {
-        cellView.txtCMRead.text = [dictData objectForKey:@"CMStartRead"];
-    }
-    if (strFuelType == nil || [strFuelType isEqual:@"(null)"]) {
-        [cellView.btnFuelType setTitle:@"Fuel type" forState:UIControlStateNormal];
-    }
-    else{
+        cellView.backgroundColor = [UIColor clearColor];
+        UIImage *img = [UIImage imageNamed:@"arrow_down.png"];
+        cellView.txtOwner.delegate = self;
+        cellView.txtCMRead.delegate = self;
+        cellView.txtCarName.delegate = self;
+        cellView.Address.delegate = self;
+        cellView.Address.text = @"Address";
+        cellView.Address.textColor = [UIColor blackColor];
+        [cellView.btnReg setTitle:strReg forState:UIControlStateNormal];
+        [cellView.btnReg.layer setBorderWidth:1.0];
+        [cellView.btnReg.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
+        [cellView.btnReg addTarget:self action:@selector(showDatePicker:) forControlEvents:UIControlEventTouchUpInside];
+        [cellView.btnReg setImage:img forState:UIControlStateNormal];
+        [cellView.btnReg setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
+        [cellView.btnReg setTitleEdgeInsets:UIEdgeInsetsMake(0,-(img.size.width - 5),0,0)];
         [cellView.btnFuelType setTitle:strFuelType forState:UIControlStateNormal];
-    }
-    [cellView.btnFuelType addTarget:self action:@selector(addPicker) forControlEvents:UIControlEventTouchUpInside];
-    [cellView.btnFuelType.layer setCornerRadius:5.0];
-    [cellView.btnFuelType.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
-    [cellView.btnFuelType.layer setBorderWidth:1.0];
-    [cellView.btnFuelType setImage:img forState:UIControlStateNormal];
-    [cellView.btnFuelType setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
-    [cellView.btnDate.layer setBorderWidth:1.0];
-    [cellView.btnDate setTitle:@"Date" forState:UIControlStateNormal];
-    [cellView.btnDate.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
-    [cellView.btnDate addTarget:self action:@selector(showDatePicker:) forControlEvents:UIControlEventTouchUpInside];
-    [cellView.btnDate setImage:img forState:UIControlStateNormal];
-    [cellView.btnDate setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
-    [cellView.btnDate setTitleEdgeInsets:UIEdgeInsetsMake(0,-(img.size.width - 5),0,0)];
-    NSString *insurDate = [NSString stringWithFormat:@"%@",[dictData objectForKey:@"InsuranceDate"]];
-    if (insurDate == nil || [insurDate isEqual:@"(null)"]) {
-        [cellView.btnDate setTitle:@"Date" forState:UIControlStateNormal];
-    } else {
-        [cellView.btnDate setTitle:insurDate forState:UIControlStateNormal];
+        [cellView.btnFuelType addTarget:self action:@selector(addPicker) forControlEvents:UIControlEventTouchUpInside];
+        [cellView.btnFuelType.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
+        [cellView.btnFuelType.layer setBorderWidth:1.0];
+        [cellView.btnFuelType setImage:img forState:UIControlStateNormal];
+        [cellView.btnFuelType setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
+        [cellView.btnDate setTitle:strInsDate forState:UIControlStateNormal];
+        [cellView.btnDate.layer setBorderWidth:1.0];
+        [cellView.btnDate.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
+        [cellView.btnDate addTarget:self action:@selector(showDatePicker:) forControlEvents:UIControlEventTouchUpInside];
+        [cellView.btnDate setImage:img forState:UIControlStateNormal];
+        [cellView.btnDate setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
+        [cellView.btnDate setTitleEdgeInsets:UIEdgeInsetsMake(0,-(img.size.width - 5),0,0)];
     }
     return cellView;
 }
@@ -375,9 +336,8 @@ return YES;
         [addAlert show];
         return;
     }
-  NSMutableDictionary *Dict = [[NSMutableDictionary alloc] initWithObjects:value forKeys:key];
-    [dictData setValuesForKeysWithDictionary:Dict];
-CBAddVehicleSecondViewController *viewController;
+    NSMutableDictionary *Dict = [[NSMutableDictionary alloc] initWithObjects:value forKeys:key];
+    CBAddVehicleSecondViewController *viewController;
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         viewController = [[CBAddVehicleSecondViewController alloc] initWithNibName:@"CBAddVehicleSecondViewController" bundle:nil];
         viewController.addCarDetails = Dict;

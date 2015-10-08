@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CBAddVehicleFirstViewController : UIViewController<UITextFieldDelegate,UIAlertViewDelegate,UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPickerViewDelegate,UITextViewDelegate> {
-    NSMutableDictionary *dictData;
     IBOutlet UITableView *tblAddFirst,*tblAddSecond;
     UIImagePickerController *picker;
     UIBarButtonItem* switchCameraButton;
@@ -21,7 +20,6 @@
     UIView* popoverView;
 }
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property (strong,nonatomic) NSMutableDictionary *dictData;
 
 - (IBAction)goNext:(id)sender;
 @end
