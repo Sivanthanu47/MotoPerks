@@ -41,8 +41,8 @@
     db_path = [docsPath stringByAppendingPathComponent:DB_NAME];
     [self checkDataBase];
     // Override point for customization after application launch.
-    if ([[[UIApplication sharedApplication] scheduledLocalNotifications] count]== 0)  {
-        NSLog(@"vehicles Count %ld",(long)[[NSUserDefaults standardUserDefaults]integerForKey:@"Vehiclelist"]);
+    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"dict"]== 0)  {
+        NSLog(@"vehicles Count %ld",(long)[[NSUserDefaults standardUserDefaults]integerForKey:@"dict"]);
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
             startViewController = [[CBNoVehiclesViewController alloc] initWithNibName:@"CBNoVehiclesViewController" bundle:nil];
         } else {

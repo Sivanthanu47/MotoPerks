@@ -121,7 +121,7 @@
                         </connections>
                     </textField>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arf-g1-mP2">
-                        <rect key="frame" x="0.0" y="320" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="299" width="320" height="50"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="pAR-11-Bag"/>
@@ -133,7 +133,7 @@
                         </connections>
                     </textView>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ea-Dj-ei6">
-                        <rect key="frame" x="0.0" y="403" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="362" width="320" height="50"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -144,12 +144,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="BL0-mQ-xBk" firstAttribute="top" secondItem="Sxo-uc-srg" secondAttribute="bottom" constant="10" id="0EW-ic-4sh"/>
-                    <constraint firstItem="7ea-Dj-ei6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="395" id="26v-Gp-2tg"/>
+                    <constraint firstItem="7ea-Dj-ei6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="354" id="26v-Gp-2tg"/>
                     <constraint firstItem="mkx-1b-Yjt" firstAttribute="top" secondItem="BL0-mQ-xBk" secondAttribute="bottom" constant="16" id="2tT-Y5-RjP"/>
                     <constraint firstItem="VS5-84-EiX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="4KS-nC-5UP"/>
                     <constraint firstItem="Pqc-aX-hjL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="5oR-nA-Gdv"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="7ea-Dj-ei6" secondAttribute="bottom" constant="18" id="8bM-Hb-tcq"/>
-                    <constraint firstItem="arf-g1-mP2" firstAttribute="top" secondItem="VS5-84-EiX" secondAttribute="bottom" constant="29" id="A1D-0B-2tP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7ea-Dj-ei6" secondAttribute="bottom" constant="59" id="8bM-Hb-tcq"/>
+                    <constraint firstItem="arf-g1-mP2" firstAttribute="top" secondItem="VS5-84-EiX" secondAttribute="bottom" constant="8" id="A1D-0B-2tP"/>
                     <constraint firstItem="bld-ob-nMS" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="AKr-cu-VJ9"/>
                     <constraint firstItem="arf-g1-mP2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="C3I-E7-qvf"/>
                     <constraint firstItem="Pqc-aX-hjL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Cjf-2I-bLN"/>
@@ -174,7 +174,7 @@
                     <constraint firstItem="LrT-p8-Osa" firstAttribute="leading" secondItem="E1Q-nT-1Ea" secondAttribute="trailing" constant="36" id="f9k-jz-iFI"/>
                     <constraint firstItem="LrT-p8-Osa" firstAttribute="top" secondItem="Pqc-aX-hjL" secondAttribute="bottom" constant="10" id="hyk-BY-wDH"/>
                     <constraint firstItem="TXp-m8-HyW" firstAttribute="top" secondItem="bld-ob-nMS" secondAttribute="bottom" constant="10" id="i4I-gf-Q8D"/>
-                    <constraint firstItem="arf-g1-mP2" firstAttribute="top" secondItem="mkx-1b-Yjt" secondAttribute="bottom" constant="34" id="rcm-oH-sup"/>
+                    <constraint firstItem="arf-g1-mP2" firstAttribute="top" secondItem="mkx-1b-Yjt" secondAttribute="bottom" constant="13" id="rcm-oH-sup"/>
                     <constraint firstItem="E1Q-nT-1Ea" firstAttribute="top" secondItem="Pqc-aX-hjL" secondAttribute="bottom" constant="10" id="sDw-eH-ZMh"/>
                     <constraint firstItem="arf-g1-mP2" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="xEH-qA-gAZ"/>
                     <constraint firstItem="Sxo-uc-srg" firstAttribute="top" secondItem="TXp-m8-HyW" secondAttribute="bottom" constant="10" id="xq9-4z-Pf8"/>

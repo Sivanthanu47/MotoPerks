@@ -124,6 +124,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     NSMutableDictionary *vehicleDict = [getCarName objectAtIndex:indexPath.row];
+    [[NSUserDefaults standardUserDefaults]setValue:vehicleDict forKey:@"dict"];
     cell.textLabel.text = [vehicleDict objectForKey:@"CarName"];
     NSString *LastServiceDate = [NSString stringWithFormat:@"%@",[vehicleDict objectForKey:@"LastServiceDate"]];
     NSDate *date = [NSDate date];
