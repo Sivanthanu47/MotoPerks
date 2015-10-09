@@ -15,15 +15,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="669"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Vehicle name/ brand" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-g6-grC">
-                        <rect key="frame" x="0.0" y="8" width="318" height="30"/>
+                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Vehicle name/ brand" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-g6-grC">
+                        <rect key="frame" x="1" y="8" width="318" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <textInputTraits key="textInputTraits"/>
                         <connections>
                             <outlet property="delegate" destination="DLw-qp-dWJ" id="CX9-aT-qda"/>
                         </connections>
                     </textField>
-                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Current Meter Read" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Jnw-1W-fuD">
+                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Current Meter Read" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Jnw-1W-fuD">
                         <rect key="frame" x="1" y="205" width="318" height="29"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="DLw-qp-dWJ" id="cqN-Pk-9TL"/>
                         </connections>
                     </textField>
-                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-s0-hwW">
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-s0-hwW">
                         <rect key="frame" x="1" y="52" width="318" height="36"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -42,7 +42,7 @@
                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
-                    <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euQ-GO-MbM">
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euQ-GO-MbM">
                         <rect key="frame" x="1" y="154" width="318" height="36"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -52,7 +52,7 @@
                             <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
-                    <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0J-j9-SwC">
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0J-j9-SwC">
                         <rect key="frame" x="1" y="103" width="318" height="36"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -61,7 +61,7 @@
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                     </button>
-                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Owner name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="pjH-Sd-PvR">
+                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Owner name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="pjH-Sd-PvR">
                         <rect key="frame" x="1" y="249" width="318" height="29"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -70,10 +70,10 @@
                             <outlet property="delegate" destination="DLw-qp-dWJ" id="EzO-6l-y6v"/>
                         </connections>
                     </textField>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-uT-3of">
-                        <rect key="frame" x="1" y="290" width="318" height="109"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-uT-3of">
+                        <rect key="frame" x="1" y="290" width="318" height="120"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         <connections>
                             <outlet property="delegate" destination="E5U-TE-vzw" id="jKC-BB-CJn"/>
@@ -86,12 +86,12 @@
                     <constraint firstItem="qtS-s0-hwW" firstAttribute="trailing" secondItem="2mx-uT-3of" secondAttribute="trailing" id="6aR-OC-Hn5"/>
                     <constraint firstItem="qtS-s0-hwW" firstAttribute="leading" secondItem="2mx-uT-3of" secondAttribute="leading" id="74v-m8-Odd"/>
                     <constraint firstItem="Jnw-1W-fuD" firstAttribute="top" secondItem="euQ-GO-MbM" secondAttribute="bottom" constant="15" id="9Jp-22-X0l"/>
-                    <constraint firstItem="qtS-s0-hwW" firstAttribute="leading" secondItem="BLr-g6-grC" secondAttribute="leading" constant="1" id="9eu-4f-22h"/>
-                    <constraint firstItem="qtS-s0-hwW" firstAttribute="top" secondItem="BLr-g6-grC" secondAttribute="bottom" constant="14" id="Fdr-tq-3qo"/>
+                    <constraint firstItem="qtS-s0-hwW" firstAttribute="leading" secondItem="BLr-g6-grC" secondAttribute="leading" id="9eu-4f-22h"/>
+                    <constraint firstItem="qtS-s0-hwW" firstAttribute="top" secondItem="BLr-g6-grC" secondAttribute="bottom" constant="15" id="Fdr-tq-3qo"/>
                     <constraint firstItem="BLr-g6-grC" firstAttribute="top" secondItem="E5U-TE-vzw" secondAttribute="topMargin" id="GnS-Ae-fn0"/>
-                    <constraint firstItem="qtS-s0-hwW" firstAttribute="trailing" secondItem="BLr-g6-grC" secondAttribute="trailing" constant="1" id="Hf0-Jv-Her"/>
+                    <constraint firstItem="qtS-s0-hwW" firstAttribute="trailing" secondItem="BLr-g6-grC" secondAttribute="trailing" id="Hf0-Jv-Her"/>
                     <constraint firstItem="qtS-s0-hwW" firstAttribute="leading" secondItem="E5U-TE-vzw" secondAttribute="leadingMargin" constant="-7" id="Ka7-s4-yhN"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="2mx-uT-3of" secondAttribute="bottom" constant="55" id="OIA-uK-L52"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2mx-uT-3of" secondAttribute="bottom" constant="44" id="OIA-uK-L52"/>
                     <constraint firstItem="Jnw-1W-fuD" firstAttribute="top" secondItem="euQ-GO-MbM" secondAttribute="bottom" constant="15" id="Ppi-Lc-iW5"/>
                     <constraint firstItem="U0J-j9-SwC" firstAttribute="top" secondItem="qtS-s0-hwW" secondAttribute="bottom" constant="15" id="a1z-HO-yHh"/>
                     <constraint firstItem="qtS-s0-hwW" firstAttribute="trailing" secondItem="pjH-Sd-PvR" secondAttribute="trailing" id="bvl-Df-E1y"/>

@@ -5,7 +5,7 @@
 //  Created by Raja Sekhar on 11/11/14.
 //  Copyright (c) 2014 Raja Sekhar. All rights reserved.
 //
-#define kOFFSET_FOR_KEYBOARD 180.0
+#define kOFFSET_FOR_KEYBOARD 240.0
 
 #import "CBAddVehicleSecondViewController.h"
 #import "VehicleAddSecondCustomCell.h"
@@ -250,10 +250,7 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
     if (tableView == tblchoice) {
         return 40;
     }
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        return 360;
-    }
-    return 415;
+    return 516;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == tblchoice) {
@@ -290,10 +287,12 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
             cellView.sellerName.text = [dictData objectForKey:@"Sellername"];
         }
         cellView.txtAddress.delegate = self;
+        cellView.txtAddress.text = @"Address";
         if ([dictData objectForKey:@"ownerAddr"]) {
             cellView.txtAddress.text = [dictData objectForKey:@"ownerAddr"];
         }
         cellView.txtNote.delegate = self;
+        cellView.txtNote.text = @"Note";
         if ([dictData objectForKey:@"Note"]) {
             cellView.txtNote.text = [dictData objectForKey:@"Note"];
         }
@@ -307,7 +306,7 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
             strServiceMonthInterval=@"every 4 months";
         }
         else{
-            strServiceKmInterval=[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"];
+            strServiceMonthInterval=[[NSUserDefaults standardUserDefaults]objectForKey:@"monthType"];
         }
         UIImage *img = [UIImage imageNamed:@"arrow_down.png"];
         cellView.txtNote.delegate = self;
@@ -349,7 +348,8 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
         [cellView.SerKmInt setImage:img forState:UIControlStateNormal];
         [cellView.SerKmInt setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
         [cellView.SerKmInt setTitleEdgeInsets:UIEdgeInsetsMake(0,-(img.size.width - 5),0,0)];
-        
+        [cellView.SerKmInt setTitle:strServiceKmInterval forState:UIControlStateNormal];
+
         [cellView.serMonthInterval.layer setBorderWidth:1.0];
         [cellView.serMonthInterval.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
         [cellView.serMonthInterval addTarget:self action:@selector(ServicePage) forControlEvents:UIControlEventTouchUpInside];
@@ -357,7 +357,6 @@ int ImgEdgeHieght,chosEdgeBtnHieght;
         [cellView.serMonthInterval setImageEdgeInsets:UIEdgeInsetsMake(0,ImgEdgeHieght,0,0)];
         [cellView.serMonthInterval setTitleEdgeInsets:UIEdgeInsetsMake(0,-(img.size.width - 5),0,0)];
         [cellView.serMonthInterval setTitle:strServiceMonthInterval forState:UIControlStateNormal];
-        [cellView.SerKmInt setTitle:strServiceKmInterval forState:UIControlStateNormal];
         }
         return cellView;
     return cell;
