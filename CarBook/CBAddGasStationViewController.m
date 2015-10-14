@@ -138,6 +138,7 @@ NSString *selectGasName;
     cell.textLabel.font = [UIFont boldSystemFontOfSize:14.0];
     cell.detailTextLabel.text = [gasDict objectForKey:@"vicinity"];
     cell.detailTextLabel.numberOfLines = 3;
+    cell.textLabel.textColor = [UIColor blackColor];
     UIImage *image = [UIImage imageNamed:@"gas_station-50.png"];
     cell.imageView.image = image;
     return cell;
@@ -163,7 +164,7 @@ NSString *selectGasName;
    
     CLLocation *currentLocation = newLocation;
     if (currentLocation != nil) {
-        NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=%f&types=gas_station&sensor=true&key=%@",  currentLocation.coordinate.longitude,currentLocation.coordinate.latitude,[manager desiredAccuracy],kGOOGLE_API_KEY];
+        NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=6000.000000&types=gas_station&sensor=true&key=%@",  currentLocation.coordinate.longitude,currentLocation.coordinate.latitude,kGOOGLE_API_KEY];
         NSURL *googleRequestURL=[NSURL URLWithString:url];
         dispatch_async(kBgQueue, ^{
             NSData* data = [NSData dataWithContentsOfURL: googleRequestURL];

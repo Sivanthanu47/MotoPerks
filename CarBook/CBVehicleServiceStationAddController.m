@@ -211,7 +211,7 @@ CustomCell *cellView;
         return;
     }
     [self showProgressHud];
-    NSString *MapAdd = [NSString stringWithFormat:@"%@,%@",strAddress,strCity];
+    NSString *MapAdd = [NSString stringWithFormat:@"%@,%@",strCity,strAddress];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         NSString *req = [NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?sensor=false&address=%@", [MapAdd stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
         NSString *result = [NSString stringWithContentsOfURL:[NSURL URLWithString:req] encoding:NSUTF8StringEncoding error:NULL];

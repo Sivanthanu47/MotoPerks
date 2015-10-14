@@ -58,9 +58,6 @@
         [self.navigationController setNavigationBarHidden:YES];
         [self.window addSubview:self.navigationController.view];
         [self.window makeKeyAndVisible];
-       
-
-
     }
     else{
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {

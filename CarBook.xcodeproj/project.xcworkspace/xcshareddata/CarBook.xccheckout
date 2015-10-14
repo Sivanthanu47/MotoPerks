@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>40F7D7A4-C64C-4A4B-B2B7-6F050E429ED1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CarBook</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>AFF4686A1FE16F892E904580519EE7E7EE7EAF32</key>
 		<string>https://github.com/Sivanthanu47/MotoPerks.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CarBook.xcodeproj</string>
+	<string>CarBook.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>AFF4686A1FE16F892E904580519EE7E7EE7EAF32</key>
