@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "MBProgressHUD.h"
-#define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#import <MapKit/MapKit.h>
+
 @class MBProgressHUD;
 @interface CBAddGasStationViewController : UIViewController<MBProgressHUDDelegate,CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate> {
     NSMutableArray *arrGasStation;

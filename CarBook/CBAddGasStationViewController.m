@@ -9,7 +9,7 @@
 #import "CBAddGasStationViewController.h"
 #import "Constants.h"
 #import "CBStrings.h"
-
+#import "FMDatabase.h"
 @interface CBAddGasStationViewController ()
 @end
 
@@ -32,7 +32,6 @@ NSString *selectGasName;
     frequentImg.hidden=YES;
     self.title = [[CBStrings sharedStrings] getPageTitle:@"GasPage"];
     [self setNavigationBar];
-    frequentImg.hidden = YES;
     arrGasStation = [[NSMutableArray alloc] init];
     selectGasName = nil;
     if ((NO == [[Constants sharedPath] isNetworkAvailable])) {
@@ -45,15 +44,17 @@ NSString *selectGasName;
         return;
     }
     locationManager = [[CLLocationManager alloc] init];
-    locationManager.delegate = self;
+    [locationManager setDelegate:self];
     locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
-    locationManager.distanceFilter = kCLDistanceFilterNone;
-    
-    if(IS_OS_8_OR_LATER){
+    locationManager.distanceFilter=kCLDistanceFilterNone;
+    if([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]){
         NSUInteger code = [CLLocationManager authorizationStatus];
         if (code == kCLAuthorizationStatusNotDetermined && ([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)] || [locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)])) {
+            // choose one request according to your business.
             if([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationAlwaysUsageDescription"]){
+                [locationManager requestAlwaysAuthorization];
             } else if([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationWhenInUseUsageDescription"]) {
+                [locationManager  requestWhenInUseAuthorization];
             } else {
                 NSLog(@"Info.plist does not contain NSLocationAlwaysUsageDescription or NSLocationWhenInUseUsageDescription");
             }
@@ -66,6 +67,7 @@ NSString *selectGasName;
     if(sender.tag == 0){
         frequentImg.hidden = NO;
         nearByImage.hidden = YES;
+        
         }
     else{
         frequentImg .hidden = YES;
@@ -82,7 +84,7 @@ NSString *selectGasName;
     self.navigationItem.leftBarButtonItem = cancelBtn;
     self.navigationItem.rightBarButtonItem = doneBtn;
 }
--(NSMutableArray *)getTopMenuLeft {
+- (NSMutableArray *)getTopMenuLeft {
     NSMutableArray *barButtonItems = [[NSMutableArray alloc] init];
     CGRect frameimgdeveloper = CGRectMake(0, 0, 44, 27);
     UIButton *btnDeveloper = [[UIButton alloc] initWithFrame:frameimgdeveloper];
@@ -130,19 +132,16 @@ NSString *selectGasName;
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    
-    [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+    [cell setAccessoryType:UITableViewCellAccessoryNone];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     NSDictionary *gasDict = [arrGasStation objectAtIndex:indexPath.row];
     cell.textLabel.text = [gasDict objectForKey:@"name"];
-    cell.textLabel.font = [UIFont boldSystemFontOfSize:14.0];
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:16.0];
     cell.detailTextLabel.text = [gasDict objectForKey:@"vicinity"];
     cell.detailTextLabel.numberOfLines = 3;
-    cell.textLabel.textColor = [UIColor blackColor];
     UIImage *image = [UIImage imageNamed:@"gas_station-50.png"];
     cell.imageView.image = image;
     return cell;
-    
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *uncheckCell = [tableView cellForRowAtIndexPath:indexPath];
@@ -161,10 +160,9 @@ NSString *selectGasName;
     [locationManager startUpdatingLocation];
 }
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-   
     CLLocation *currentLocation = newLocation;
     if (currentLocation != nil) {
-        NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=6000.000000&types=gas_station&sensor=true&key=%@",  currentLocation.coordinate.longitude,currentLocation.coordinate.latitude,kGOOGLE_API_KEY];
+        NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=%f&types=gas_station&sensor=true&key=%@", currentLocation.coordinate.latitude, currentLocation.coordinate.longitude,[manager desiredAccuracy],kGOOGLE_API_KEY];
         NSURL *googleRequestURL=[NSURL URLWithString:url];
         dispatch_async(kBgQueue, ^{
             NSData* data = [NSData dataWithContentsOfURL: googleRequestURL];
@@ -175,6 +173,7 @@ NSString *selectGasName;
         [self hideProgressHud];
     }
 }
+
 - (void)fetchedData:(NSData *)responseData {
     NSError* error;
     NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];

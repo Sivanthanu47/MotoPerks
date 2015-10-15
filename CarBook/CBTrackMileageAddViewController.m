@@ -46,6 +46,7 @@ int CellHeight,customRateViewHeight = 340;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
     strKm = [NSString stringWithFormat:@"%d",diskm];
     intOldkm = [[NSUserDefaults standardUserDefaults]objectForKey:@"txtkm"];
+    
 }
 
 
@@ -203,7 +204,9 @@ int CellHeight,customRateViewHeight = 340;
         NSDateFormatter *DateFormatter=[[NSDateFormatter alloc] init];
         [DateFormatter setDateFormat:DATEFORMAT];
         strTrackDate = [NSString stringWithFormat:@"%@",[DateFormatter stringFromDate:[NSDate date]]];
-        [tblTxtField reloadData];
+        cellView.lblTrackDate.text = strTrackDate;
+        [cellView.btnTrackCar setTitle:strTrackCar forState:UIControlStateNormal];
+        //[tblTxtField reloadData];
         customView.hidden = TRUE;
 }
 }
@@ -330,6 +333,7 @@ int CellHeight,customRateViewHeight = 340;
         else{
              cellView.txtGasName.text = strStationName;
         }
+        [self showCost];
         [cellView.btnGasName addTarget:self action:@selector(showStationList) forControlEvents:UIControlEventTouchUpInside];
         [cellView.btnCost setTitle:@"1 Litre cost Rs. 60" forState:UIControlStateNormal];
         [cellView.btnCost addTarget:self action:@selector(showCost) forControlEvents:UIControlEventTouchUpInside];
