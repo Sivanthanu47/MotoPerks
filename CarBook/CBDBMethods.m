@@ -45,9 +45,8 @@
     _appDelegate.db_path = [_appDelegate.docsPath stringByAppendingPathComponent:DB_NAME];
     database = [FMDatabase databaseWithPath:_appDelegate.db_path];
     [database open];
-    [database executeUpdate:@"insert into tblServiceStation(StationName,AddCity,Address,PhoneNo,ContactNo,Notes,Latitude,Longitude), values (?,?,?,?,?,?,?,?)",[dict objectForKey:@"stationName"],[dict objectForKey:@"AddCity"],[dict objectForKey:@"Address"],[dict objectForKey:@"PhoneNo"],[dict objectForKey:@"ContactNo"],[dict objectForKey:@"Notes"],[dict objectForKey:@"Latitude"],[dict objectForKey
-                                                                                                                                                                                                                                                                                                                                                                                              :@"Longitude"],nil];
-        [database close];
+[database executeUpdate:@"insert into tblServiceStation(StationName,AddCity,Address,PhoneNo,ContactNo,Notes,Latitude,Longitude),values(?,?,?,?,?,?,?,?)",[dict objectForKey:@"stationName"],[dict objectForKey:@"AddCity"],[dict objectForKey:@"Address"],[dict objectForKey:@"PhoneNo"],[dict objectForKey:@"ContactNo"],[dict objectForKey:@"Notes"],[dict objectForKey:@"Latitude"],[dict objectForKey                                                                                                                                                                                                         :@"Longitude"],nil];
+    [database close];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"AddedService" object:nil];
 }
 
@@ -57,7 +56,7 @@
     _appDelegate.db_path = [_appDelegate.docsPath stringByAppendingPathComponent:DB_NAME];
     database = [FMDatabase databaseWithPath:_appDelegate.db_path];
     [database open];
-    [database executeUpdate:@"insert into tblTrackMileage(rate,Quantity,fuelCost,CMRead,CarName,StationName,Date) values (?,?,?,?,?,?,?)",[trackDetail objectForKey:@"Rate"],[trackDetail objectForKey:@"Quantity"],[trackDetail objectForKey:@"fuelCost"],[trackDetail objectForKey:@"CMRead"],[trackDetail objectForKey:@"CarName"],[trackDetail objectForKey:@"StationName"],[trackDetail objectForKey:@"TrackDate"],nil];
+    [database executeUpdate:@"insert into tblTrackMileage(rate,Quantity,fuelCost,CMRead,CarName,StationName,vicinity,TrackDate) values (?,?,?,?,?,?,?,?)",[trackDetail objectForKey:@"Rate"],[trackDetail objectForKey:@"Quantity"],[trackDetail objectForKey:@"fuelCost"],[trackDetail objectForKey:@"CMRead"],[trackDetail objectForKey:@"CarName"],[trackDetail objectForKey:@"StationName"],[trackDetail objectForKey:@"Vicinity"],[trackDetail objectForKey:@"TrackDate"],nil];
     [database close];
 }
 
@@ -302,20 +301,24 @@
         NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
         NSString *ssid = [results stringForColumn:@"TMId"];
         [dictionary setObject:ssid forKey:@"TMId"];
-        NSString *carname = [results stringForColumn:@"CarName"];
-        [dictionary setObject:carname forKey:@"CarName"];
-        NSString *note = [results stringForColumn:@"StationName"];
-        [dictionary setObject:note forKey:@"stationName"];
-        NSString *vin = [results stringForColumn:@"Date"];
-        [dictionary setObject:vin forKey:@"TrackDate"];
-        NSString *cmread = [results stringForColumn:@"CMRead"];
-        [dictionary setObject:cmread forKey:@"CMRead"];
-        NSString *carid = [results stringForColumn:@"VDId"];
-        [dictionary setObject:carid forKey:@"VDId"];
         NSString *rate = [results stringForColumn:@"Rate"];
         [dictionary setObject:rate forKey:@"Rate"];
         NSString *quantity = [results stringForColumn:@"Quantity"];
         [dictionary setObject:quantity forKey:@"Quantity"];
+        NSString *cost = [results stringForColumn:@"fuelCost"];
+        [dictionary setObject:cost forKey:@"fuelCost"];
+        NSString *cmread = [results stringForColumn:@"CMRead"];
+        [dictionary setObject:cmread forKey:@"CMRead"];
+        NSString *carname = [results stringForColumn:@"CarName"];
+        [dictionary setObject:carname forKey:@"CarName"];
+        NSString *note = [results stringForColumn:@"StationName"];
+        [dictionary setObject:note forKey:@"stationName"];
+        NSString *vicinity = [results stringForColumn:@"Vicinity"];
+        [dictionary setObject:vicinity forKey:@"Vicinity"];
+        NSString *vin = [results stringForColumn:@"TrackDate"];
+        [dictionary setObject:vin forKey:@"TrackDate"];
+        NSString *carid = [results stringForColumn:@"VDId"];
+        [dictionary setObject:carid forKey:@"VDId"];
         [arrgetCarData addObject:dictionary];
     }
     [database close];
@@ -408,7 +411,9 @@
         [dictionary setObject:carname forKey:@"CarName"];
         NSString *note = [results stringForColumn:@"StationName"];
         [dictionary setObject:note forKey:@"stationName"];
-       NSString *vin = [results stringForColumn:@"Date"];
+        NSString *vicinity = [results stringForColumn:@"Vicinity"];
+        [dictionary setObject:vicinity forKey:@"Vicinity"];
+       NSString *vin = [results stringForColumn:@"TrackDate"];
         [dictionary setObject:vin forKey:@"TrackDate"];
         [arrgetCarData addObject:dictionary];
         NSLog(@"dictionary %@",arrgetCarData);

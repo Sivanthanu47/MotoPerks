@@ -11,7 +11,7 @@
 @implementation CustomCell
 
 @synthesize carlbl,stationlbl,totcatlbl,datelbl,txtNoteLbl,costlbl,typelbl,txtCost,txtNote,btnType,btnDelete,btnAdd,btnFuelType,btnMonth,btnKM;
-@synthesize txtServName,txtAddPlace,txtAddCity,txtPhone,txtEmail,txtMap,imgServName,imgAddPlace,imgAddCity,imgPhone,imgEmail,imgMap,txtFuelType,txtRate,txtQuantity,FirstarrImgView,SectarrImgView,lblMonthChange,lblkmChange,btnCost,txtContact,serviceAddr,Notes;
+@synthesize txtServName,txtAddPlace,txtAddCity,txtPhone,txtEmail,txtMap,imgServName,imgAddPlace,imgAddCity,imgPhone,imgEmail,imgMap,txtFuelType,txtRate,txtQuantity,FirstarrImgView,SectarrImgView,lblMonthChange,lblkmChange,btnCost,txtContact,serviceAddr,Notes,txtVicinity;
 @synthesize txtGasName,txtTrackCMRead,txtTrackFuel,txtTrackKM,btnTrackCar,btnGasName, lblTrackDate,lblFuelType;
 @synthesize lblStationName,lblStationAdd,lblStationKm,btnMapPin,btnRate,btnQuantity;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {

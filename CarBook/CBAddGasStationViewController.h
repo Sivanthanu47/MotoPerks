@@ -17,7 +17,8 @@
     IBOutlet UITableView *tblGas;
     IBOutlet UIButton * frequentStation,*NearByStations;
     IBOutlet UIImageView * frequentImg,*nearByImage;
-
+    NSDictionary *gasDict;
+    NSDictionary * gasSelectDict;
     CLLocationManager *locationManager;
 }
 @property(strong, nonatomic) MBProgressHUD *HUD;

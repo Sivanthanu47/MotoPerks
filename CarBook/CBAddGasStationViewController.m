@@ -14,6 +14,7 @@
 @end
 
 NSString *selectGasName;
+NSString * selectVicinity;
 
 @implementation CBAddGasStationViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -34,6 +35,7 @@ NSString *selectGasName;
     [self setNavigationBar];
     arrGasStation = [[NSMutableArray alloc] init];
     selectGasName = nil;
+    selectVicinity =nil;
     if ((NO == [[Constants sharedPath] isNetworkAvailable])) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[[CBStrings sharedStrings] getString:@"app_name"]
                                                             message:[[CBStrings sharedStrings] getAlertMessage:@"NoNetwork"]
@@ -67,7 +69,6 @@ NSString *selectGasName;
     if(sender.tag == 0){
         frequentImg.hidden = NO;
         nearByImage.hidden = YES;
-        
         }
     else{
         frequentImg .hidden = YES;
@@ -110,10 +111,10 @@ NSString *selectGasName;
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)selectedGasStation {
-    if (selectGasName != nil) {
-        [[NSUserDefaults standardUserDefaults] setObject:selectGasName forKey:@"GasName"];
-    }
-    [self.navigationController popViewControllerAnimated:YES];
+    if (gasSelectDict != nil ) {
+        [[NSUserDefaults standardUserDefaults] setObject:gasSelectDict  forKey:@"gasStation"];
+}
+[self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark- tableViewDelegates
@@ -134,8 +135,9 @@ NSString *selectGasName;
     }
     [cell setAccessoryType:UITableViewCellAccessoryNone];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    NSDictionary *gasDict = [arrGasStation objectAtIndex:indexPath.row];
+    gasDict = [arrGasStation objectAtIndex:indexPath.row];
     cell.textLabel.text = [gasDict objectForKey:@"name"];
+    NSLog(@"gasDict %@",gasDict);
     cell.textLabel.font = [UIFont boldSystemFontOfSize:16.0];
     cell.detailTextLabel.text = [gasDict objectForKey:@"vicinity"];
     cell.detailTextLabel.numberOfLines = 3;
@@ -146,8 +148,8 @@ NSString *selectGasName;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *uncheckCell = [tableView cellForRowAtIndexPath:indexPath];
     uncheckCell.accessoryType = UITableViewCellAccessoryCheckmark;
-    NSDictionary *gasDict = [arrGasStation objectAtIndex:indexPath.row];
-    selectGasName = [gasDict objectForKey:@"name"];
+   gasSelectDict = [arrGasStation objectAtIndex:indexPath.row];
+    
 }
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *uncheckCell = [tableView cellForRowAtIndexPath:indexPath];

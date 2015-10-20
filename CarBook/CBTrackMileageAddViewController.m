@@ -20,7 +20,7 @@
 int diskm;
 NSString * intOldkm;
 UITextField *textField;
-NSString *strStationName,*strTrackDate,*strTrackCar,*strCMRead,*strRate,*strQuantity,*strEditcost;
+NSString *strStationName,*strTrackDate,*strTrackCar,*strCMRead,*strRate,*strQuantity,*strEditcost,*strVicinty;
 int intCuread = 0,intOldread = 0,intOldfuel = 0, customTblHeight = 0,selectCarIndex = 0,selectStationIndex = 0;
 UIView *customView;
 NSArray *cellNib;
@@ -46,7 +46,6 @@ int CellHeight,customRateViewHeight = 340;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
     strKm = [NSString stringWithFormat:@"%d",diskm];
     intOldkm = [[NSUserDefaults standardUserDefaults]objectForKey:@"txtkm"];
-    
 }
 
 
@@ -63,8 +62,10 @@ int CellHeight,customRateViewHeight = 340;
     } else {
         ImgEdgeHieght = (self.view.frame.size.width-76);
     }
-    strStationName = [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"GasName"]];
-    NSLog(@"Gas Name %@",strStationName);
+    NSDictionary * gasSelectDict =[[NSUserDefaults standardUserDefaults] dictionaryForKey:@"gasStation"];
+    strStationName = [NSString stringWithFormat:@"%@",[gasSelectDict objectForKey:@"name"]];
+    strVicinty = [NSString stringWithFormat:@"%@",[gasSelectDict objectForKey:@"vicinity"]];
+    NSLog(@"gasDict %@%@",strStationName,strVicinty);
     [tblTxtField reloadData];
 }
 
@@ -117,8 +118,8 @@ int CellHeight,customRateViewHeight = 340;
 }
 
 - (IBAction)savedTrackDetails {
-    NSMutableArray *key = [[NSMutableArray alloc] initWithObjects:@"Rate",@"Quantity",@"fuelCost",@"CMRead",@"CarName",@"StationName",@"TrackDate", nil];
-    NSMutableArray *value = [[NSMutableArray alloc] initWithObjects:strRate,strQuantity,strEditcost,strCMRead,strTrackCar,strStationName,strTrackDate, nil];
+    NSMutableArray *key = [[NSMutableArray alloc] initWithObjects:@"Rate",@"Quantity",@"fuelCost",@"CMRead",@"CarName",@"StationName",@"Vicinity",@"TrackDate", nil];
+    NSMutableArray *value = [[NSMutableArray alloc] initWithObjects:strRate,strQuantity,strEditcost,strCMRead,strTrackCar,strStationName,strVicinty,strTrackDate, nil];
     __block BOOL isNull = NO;
     [value enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if ([obj isEqualToString:@""] || (obj == nil)) {
@@ -308,6 +309,13 @@ int CellHeight,customRateViewHeight = 340;
             [cellView setSelectionStyle:UITableViewCellSelectionStyleNone];
             
         }
+        NSLog(@"strVicinty %@",strVicinty);
+        if (strVicinty ==nil || [strVicinty isEqual:@"(null)"]) {
+            cellView.txtVicinity.text = @"Station Addr";
+        }
+        else{
+        cellView.txtVicinity.text = strVicinty;
+        }
         [cellView.btnTrackCar addTarget:self action:@selector(showCarList) forControlEvents:UIControlEventTouchUpInside];
         [cellView.btnTrackCar.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
         [cellView.btnTrackCar.layer setBorderWidth:1.0];
@@ -349,6 +357,7 @@ int CellHeight,customRateViewHeight = 340;
         cellView.txtQuantity.delegate = self;
         [cellView.txtQuantity addTarget:self action:@selector(textFieldValueChanges:) forControlEvents:UIControlEventEditingChanged];
         cellView.txtQuantity.placeholder  = @"Quantity";
+        cell.textLabel.textColor = [UIColor blackColor];
         return cellView;
     }
     return cell;
@@ -393,6 +402,10 @@ int CellHeight,customRateViewHeight = 340;
     }
     else if(textField.tag == 4){
         strStationName =textField.text;
+    }
+    else if(textField.tag==5)
+    {
+        strVicinty = textField.text;
     }
 }
 

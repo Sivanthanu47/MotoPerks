@@ -21,7 +21,7 @@
 @property (nonatomic, retain) IBOutlet UITextView *txtViewNote;
 @property (nonatomic, retain) IBOutlet UIButton *btnDate,*btnReg,*btnSerName,*btnLDate,*btnTake,*btnPick,*btnFuelType;
 @property (nonatomic, retain) IBOutlet UIImageView *imgView,*FirstarrImgView,*SectarrImgView;
-@property (nonatomic, retain) IBOutlet UITextField *txtGasName,*txtTrackCMRead,*txtTrackFuel,*txtTrackKM,*txtRate,*txtQuantity;
+@property (nonatomic, retain) IBOutlet UITextField *txtGasName,*txtTrackCMRead,*txtTrackFuel,*txtTrackKM,*txtRate,*txtQuantity,*txtVicinity;
 @property (nonatomic, retain) IBOutlet UIButton *btnTrackCar,*btnGasName;
 @property (nonatomic, retain) IBOutlet UILabel *lblTrackDate,*lblFuelType;
 @property (nonatomic, retain) IBOutlet UIButton *btnMapPin;

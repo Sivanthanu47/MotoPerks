@@ -99,7 +99,7 @@
         
         [database executeUpdate:@"create table tblServiceStation(SSId INTEGER  PRIMARY KEY,StationName text,AddCity text,Address text,PhoneNo text,ContactNo text,Notes text,Latitude text,Longitude text)"];
         
-        [database executeUpdate:@"create table tblTrackMileage(TMId INTEGER  PRIMARY KEY,Rate integer,Quantity float,fuelCost float,CMRead text,CarName text,StationName text,Date text)"];
+        [database executeUpdate:@"create table tblTrackMileage(TMId INTEGER  PRIMARY KEY,Rate integer,Quantity float,fuelCost float,CMRead text,CarName text,StationName text,vicinity text,Date text)"];
         
         [database executeUpdate:@"create table tblNotification(NFId INTEGER  PRIMARY KEY,CarName text,StationName text,Date text,TravelKM text,ServiceInterval text,VDId integer,SSId integer)"];
         

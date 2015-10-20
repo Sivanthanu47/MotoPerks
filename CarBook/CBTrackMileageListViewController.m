@@ -128,7 +128,6 @@
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
     cell.imageView.image = [image thumbnailImage:48 transparentBorder:1 cornerRadius:3 interpolationQuality:kCGInterpolationDefault];
     cell.backgroundColor = [UIColor clearColor];
-    cell.textLabel.textColor = [UIColor blackColor];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
